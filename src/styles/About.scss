@@ -1,0 +1,30 @@
+.about-row {
+  display: flex;
+  justify-content: flex-start;
+  .about-sidebar {
+    display: flex;
+    flex-direction: column;
+    // align-items:stretch;
+    justify-content: space-between;
+    width: 20%;
+    .about-card {
+      background-color: #221f34;
+    }
+    .about-card.active {
+      background-color: #090520;
+    }
+  }
+  .about-content {
+    background-color: #090520;
+    flex-grow: 1;
+    height: 70vh;
+    max-width: 80%;
+  }
+}
+.mobile {
+  display: none;
+}
+.about-card-title {
+  background-color: #090520;
+  width: 30%;
+}

@@ -1,0 +1,21 @@
+.hero-area {
+  width: 100%;
+  height: calc(100vh-100px);
+  display: flex;
+  justify-content: space-between;
+  .col {
+    max-width: 45%;
+  }
+}
+.get-started {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icons {
+  color: #98a2ac;
+  margin: 20px 10px;
+}
+.icons-container {
+  display: flex;
+}

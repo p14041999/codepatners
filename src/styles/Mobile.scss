@@ -1,0 +1,161 @@
+@media only screen and (max-width: 900px) {
+  #hero-comp {
+    flex-direction: column;
+  }
+
+  // #hero-img {
+  //   width: 275px;
+  //   padding: 38px 1px;
+  // }
+  .container {
+    margin-left: 32px;
+    margin-right: 20px;
+  }
+  .hero-area .col {
+    max-width: 80%;
+  }
+  .py-7 {
+    padding-top: 9px;
+    // padding-bottom: 70px;
+  }
+  .px-3 {
+    padding: 10px 20px;
+  }
+  .footer-row {
+    flex-direction: column;
+  }
+  .footer-col-1 {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .footer-col-2 {
+    flex-direction: column;
+  }
+  #copyrights {
+    font-size: larger !important;
+  }
+  .get-started h5 {
+    font-size: 14px;
+  }
+  .usage-content .usage-col {
+    // width: auto;
+    // width: auto;
+    width: 100% !important;
+    margin: 0px 11px;
+  }
+  .usage-content {
+    overflow: auto;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+  .row .col {
+    width: 100%;
+  }
+  .usage-card {
+    height: 91px;
+    width: 100px;
+    position: relative;
+  }
+
+  #root {
+    overflow: hidden;
+  }
+  s #company-logo {
+    width: 20.81px;
+  }
+  #usage-span1:before {
+    top: -5px;
+    left: -5px;
+  }
+  #usage-span1 {
+    width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  #usage-span2:before {
+    top: -5px;
+    left: -5px;
+  }
+  #usage-span2 {
+    width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  #usage-span3:before {
+    top: -5px;
+    left: -5px;
+  }
+  #usage-span3 {
+    width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  #usage-span4:before {
+    top: -5px;
+    left: -5px;
+  }
+  #usage-span4 {
+    width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  .hamburger:before {
+    width: 18.64px;
+  }
+  .hamburger:after {
+    width: 6.58px;
+  }
+  .hamburger {
+    width: 18.64px;
+  }
+  #company-logo {
+    width: 20.81px;
+  }
+  #arrow-svg {
+    padding-left: 16px;
+  }
+  .blue-block {
+    top: 345px !important;
+  }
+  .cursor {
+    display: none !important;
+  }
+  .pointer {
+    display: none !important;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .about-sidebar {
+    width: 100% !important;
+  }
+  .about-card-title {
+    text-align: center;
+    // margin-risght: 20px;
+    width: 40% !important;
+    padding: 10px 10px;
+  }
+  .about-carde {
+    margin: 10px 0px;
+  }
+  .about-h2 {
+    display: none;
+  }
+  .team-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-row .team-col {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 20px 0px;
+  }
+}

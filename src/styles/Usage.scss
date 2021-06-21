@@ -1,0 +1,42 @@
+.usage-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .usage-col {
+    width: 23%;
+    // max-width:23%;
+    .usage-card {
+      background-color: #221f34;
+      text-transform: uppercase;
+    }
+    .usage-card.active {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #090520;
+      box-shadow: 0px 0px 30px rgba(66, 232, 224, 0.1);
+      p.p-big {
+        color: #42e8e0 !important;
+      }
+      span.active {
+        display: block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #42e8e0;
+        // border:5px solid rgba(255, 193, 193, 0.169);
+        position: relative;
+      }
+      span.active::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: rgba(66, 232, 224, 0.09);
+      }
+    }
+  }
+}
