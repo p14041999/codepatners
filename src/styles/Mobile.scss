@@ -3,17 +3,16 @@
     flex-direction: column;
   }
 
-  // #hero-img {
-  //   width: 275px;
-  //   padding: 38px 1px;
-  // }
+  #hero-img {
+    margin-bottom:400px;
+  }
   .container {
     margin-left: 32px;
     margin-right: 20px;
   }
   .hero-area .col {
     max-width: 80%;
-    margin-bottom:430px;
+    // margin-bottom:430px;
   }
   .py-7 {
     padding-top: 9px;
