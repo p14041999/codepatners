@@ -2,6 +2,9 @@
   #hero-comp {
     flex-direction: column;
   }
+  #hero-container {
+    margin-bottom: 400px;
+  }
 
   // #hero-img {
   //   width: 275px;
@@ -61,7 +64,10 @@
   #root {
     overflow: hidden;
   }
-  s #company-logo {
+  #company-logo {
+    width: 20.81px;
+  }
+  #company-logoblue {
     width: 20.81px;
   }
   #usage-span1:before {
@@ -113,6 +119,15 @@
   .hamburger {
     width: 18.64px;
   }
+  .blue:before {
+    width: 18.64px;
+  }
+  .blue:after {
+    width: 6.58px;
+  }
+  .blue {
+    width: 18.64px;
+  }
   #company-logo {
     width: 20.81px;
   }
@@ -157,5 +172,36 @@
     max-width: 100% !important;
     width: 100% !important;
     margin: 20px 0px;
+  }
+  // #useCase {
+  //   margin-top: 35pc;
+  // }
+  #pc {
+    display: none;
+  }
+  #mobileTimeline {
+    display: block !important;
+
+    // height: 201px !important;
+  }
+}
+// @media only screen and (max-width: 1289px) {
+//   .timeline-box {
+//     width: 292px !important;
+//     max-width: 292px !important;
+//   }
+// }
+
+@media only screen and (max-width: 550px) {
+  .timeline-box {
+    max-width: 300px !important;
+    width: 100% !important;
+    height: 201px;
+    background: #ffffff1a;
+    margin: 0px 20px;
+    padding: 0px 40px !important;
+  }
+  .bux2 {
+    padding-right: 69px !important;
   }
 }

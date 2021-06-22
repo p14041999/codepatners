@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 .nav-top {
   display: flex;
   justify-content: space-between;
@@ -8,6 +10,7 @@
   width: 30px;
   height: 3px;
   background-color: #ffffff;
+  // background-color: #268ff1;
   position: relative;
 }
 .hamburger:before {
@@ -26,4 +29,49 @@
   background-color: #ffffff;
   position: absolute;
   top: 10px;
+}
+#navbar:hover {
+  cursor: pointer;
+}
+#menubtn {
+  z-index: 9999;
+}
+#logo-cont {
+  z-index: 9999;
+}
+
+.blue {
+  display: block;
+  width: 30px;
+  height: 3px;
+  position: relative;
+  background-color: #268ff1;
+}
+
+.blue:before {
+  // margin-bottom: 3px;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #268ff1;
+  position: absolute;
+  top: -10px;
+}
+.blue:after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #268ff1;
+  position: absolute;
+  top: 10px;
+}
+
+.bluelogo {
+  background-color: #268ff1;
+}
+
+#navbar-cont {
+  position: sticky;
+  top: 0px;
+  z-index: 9998;
 }

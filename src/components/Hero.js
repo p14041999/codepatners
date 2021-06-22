@@ -3,30 +3,8 @@ import "../styles/Hero.scss";
 import "../styles/Mobile.scss";
 import HeroImage from "../assets/heroImage.png";
 import { Facebook, Twitter, YouTube, Instagram } from "@material-ui/icons";
-
-// import {
-//   Accordian,
-//   AccordianSummary,
-//   AccordianDetails,
-//   Typography,
-// } from "@material-ui/core";
-import {
-  Accordion,
-  AccordionSummary,
-  Typography,
-  AccordionDetails,
-} from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { withStyles } from "@material-ui/styles";
-const styles = (theme) => ({
-  root: {
-    width: "100%",
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
-  },
-});
 
 class Hero extends Component {
   render() {
@@ -101,6 +79,4 @@ class Hero extends Component {
     );
   }
 }
-
-// export default withStyles(styles)(Hero);
 export default Hero;

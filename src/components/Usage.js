@@ -25,7 +25,7 @@ export default class Usage extends Component {
   }
   render() {
     return (
-      <div className="container py-7 text-light">
+      <div className="container py-7 text-light " id="useCase">
         <h4>Use cases</h4>
         <div className="usage-content">
           <div className="usage-col">
