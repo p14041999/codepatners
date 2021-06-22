@@ -11,7 +11,7 @@ class Hero extends Component {
     const { classes } = this.props;
 
     return (
-      <div className="container">
+      <div className="container" id="hero-container">
         <div className="hero-area py-7" id="hero-comp">
           <div className="col">
             <div className="get-started">
