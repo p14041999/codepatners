@@ -65,7 +65,6 @@ export default class Team extends Component {
               className="team-card px-3 py-4"
             >
               <img
-                id="dir-img"
                 src={DirectorImage2}
                 className="team-image"
                 alt=""
