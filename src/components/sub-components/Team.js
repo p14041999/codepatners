@@ -3,6 +3,7 @@ import "../../styles/sub-components/Team.scss";
 import CEOImage from "../../assets/ceo.svg";
 import CTOImage from "../../assets/cto.svg";
 import DirectorImage from "../../assets/director.jpeg";
+import DirectorImage2 from "../../assets/director.svg";
 export default class Team extends Component {
   componentDidMount() {
     window.VanillaTilt.init(window.document.querySelectorAll(".team-card"), {
@@ -53,6 +54,23 @@ export default class Team extends Component {
                 alt=""
               />
               <p className="p-big bold">Carlie Jayne Guy</p>
+              <p className="text-secondary m-0">Director</p>
+            </div>
+          </div>
+        <div className="team-col">
+            <div
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.8"
+              className="team-card px-3 py-4"
+            >
+              <img
+                id="dir-img"
+                src={DirectorImage2}
+                className="team-image"
+                alt=""
+              />
+              <p className="p-big bold">Jerome Jones</p>
               <p className="text-secondary m-0">Director</p>
             </div>
           </div>
