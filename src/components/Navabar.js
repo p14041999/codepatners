@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "../assets/logo.svg";
 import logoblue from "../assets/logoblue.svg";
 import "../styles/Navbar.scss";
+import { FormControlLabel, Switch } from "@material-ui/core";
 export default class Navabar extends Component {
   constructor() {
     super();
@@ -35,7 +36,19 @@ export default class Navabar extends Component {
               <img src={logo} id="company-logo" alt="" />
             )}
           </div>
-          <div></div>
+          <div>
+            <FormControlLabel
+              style={{ color: "white", fontFamily: "Rubik" }}
+              control={
+                <Switch
+                  // checked={true}
+                  //onChange={func}
+                  color="primary"
+                />
+              }
+              label="Dark Mode"
+            />
+          </div>
         </div>
       </div>
     );
