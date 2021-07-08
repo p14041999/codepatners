@@ -1,4 +1,23 @@
 @media only screen and (max-width: 900px) {
+  .full .mainCont {
+    flex-direction: column;
+    right: -2% !important;
+    width: 70%;
+    top: -5px !important;
+  }
+  .full .mainCont .c1 .logCont {
+    margin: 10px 0px;
+    padding: 0 !important;
+  }
+  .c2 {
+    h1 {
+      font-size: 23px;
+    }
+  }
+
+  #closeBtnCont {
+    right: 32px;
+  }
   #hero-comp {
     flex-direction: column;
   }

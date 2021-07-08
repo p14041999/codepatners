@@ -7,11 +7,14 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import NavMenu from "./components/NavbarMenu";
 import Timeline from "./components/Timeline";
+import TeamView from "./components/sub-components/TeamView";
 export default class App extends Component {
   constructor() {
     super();
     this.state = {
       NavMenu: false,
+      Team: false,
+      data: {},
     };
   }
   componentDidMount() {
@@ -32,6 +35,11 @@ export default class App extends Component {
   handleChangeState = (val) => {
     this.setState({ ...this.state, NavMenu: val });
   };
+  handleTeamChangeState = async (val, data) => {
+    // console.log(data);
+    await this.setState({ ...this.state, Team: val, data: data });
+    console.log(this.state);
+  };
   render() {
     return (
       <>
@@ -43,7 +51,13 @@ export default class App extends Component {
           />
           <Hero />
           <Usage />
-          <About />
+          <About team={this.handleTeamChangeState} />
+          {this.state.Team ? (
+            <TeamView
+              team={this.handleTeamChangeState}
+              data={this.state.data}
+            />
+          ) : null}
           <Timeline />
         </div>
         <div className="max-width pos-rel">

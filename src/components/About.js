@@ -14,7 +14,9 @@ export default class About extends Component {
   };
   constructor(props) {
     super(props);
+    const { team } = this.props;
     this.clearState = this.clearState.bind(this);
+    // console.log(team);
   }
   clearState() {
     this.setState({
@@ -25,6 +27,8 @@ export default class About extends Component {
     });
   }
   render() {
+    const { team } = this.props;
+    console.log(team);
     return (
       <>
         <div className="container text-light py-7 desktop">
@@ -86,7 +90,7 @@ export default class About extends Component {
               {this.state.about && <AboutUs />}
               {this.state.mission && <Mission />}
               {this.state.structure && <Structure />}
-              {this.state.team && <Team />}
+              {this.state.team && <Team team={team} />}
             </div>
           </div>
         </div>
@@ -124,7 +128,7 @@ export default class About extends Component {
                   Team
                 </p>
                 <div className={"about-card active text-info"}>
-                  <Team />
+                  <Team team={team} />
                 </div>
               </div>
             </div>
