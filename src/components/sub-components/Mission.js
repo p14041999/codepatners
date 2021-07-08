@@ -2,9 +2,12 @@ import React, { Component } from "react";
 
 export default class Mission extends Component {
   render() {
+    const { darkMode } = this.props;
     return (
       <div className="px-4 py-2">
-        <h2 class="about-h2">Mission & Vision</h2>
+        <h2 className={darkMode ? "about-h2" : "about-h2 text-dark"}>
+          Mission & Vision
+        </h2>
         <p className="text-secondary">
           Our vision is to build a blockchain company that will be among the
           largest blockchain ecosystem in the world; a business where everyone

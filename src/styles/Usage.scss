@@ -9,12 +9,23 @@
       background-color: #221f34;
       text-transform: uppercase;
     }
+    .usage-cardLight {
+      background-color: #6d6a6a;
+      text-transform: uppercase;
+    }
     .usage-card.active {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: #090520;
       box-shadow: 0px 0px 30px rgba(66, 232, 224, 0.1);
+    }
+    .activeLight {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #bdbdbd;
+      box-shadow: 0px 0px 30px grey;
       p.p-big {
         color: #42e8e0 !important;
       }
@@ -40,3 +51,8 @@
     }
   }
 }
+
+// ration card
+// adhar card
+// photo
+// light bill

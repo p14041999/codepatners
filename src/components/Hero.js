@@ -8,7 +8,7 @@ import { withStyles } from "@material-ui/styles";
 
 class Hero extends Component {
   render() {
-    const { classes } = this.props;
+    const { classes, darkMode } = this.props;
 
     return (
       <div className="container" id="hero-container">
@@ -31,7 +31,7 @@ class Hero extends Component {
                 />
               </svg>
             </div>
-            <h1 className="text-light">
+            <h1 className={darkMode ? "text-light" : "text-dark"}>
               The Hybrid Smart Chain for Extensive Use
             </h1>
 

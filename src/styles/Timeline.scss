@@ -13,11 +13,25 @@
     padding: 0px 70px;
     box-sizing: border-box;
   }
+  .timeline-boxLight {
+    max-width: 499px;
+    width: 499px;
+    height: 201px;
+    background: #bdbdbd;
+    padding: 0px 70px;
+    box-sizing: border-box;
+  }
   .hrline {
     margin: 0px;
     width: 125px;
     height: 0px;
     border-top: 3px solid #ffffff1a;
+  }
+  .hrlineLight {
+    margin: 0px;
+    width: 125px;
+    height: 0px;
+    border-top: 3px solid #0404041a;
   }
 
   .bluedot {
@@ -27,6 +41,14 @@
     border-radius: 50%;
     background-color: #42e8e0;
     border: 5px solid #171429;
+  }
+  .bluedotLight {
+    // z-index: 1;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #42e8e0;
+    border: 5px solid #e5e5e5;
   }
 }
 
@@ -91,6 +113,17 @@
   color: #e5e5e5;
   margin-left: 103px;
 }
+#timeline-titleLight {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #171429;
+  margin-left: 103px;
+}
 .vertical-line {
   width: 4px;
   height: 670px;
@@ -120,4 +153,10 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+
+.lightHide {
+  background-color: #e5e5e5 !important;
+  border-top: 3px solid #e5e5e5 !important ;
+  z-index: -1;
 }

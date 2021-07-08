@@ -13,14 +13,18 @@ export default class Team extends Component {
   }
 
   handleTeamClick = (data) => {
-    const { team } = this.props;
+    const { team, darkMode } = this.props;
     team(true, data);
   };
   render() {
     let director;
+    const { darkMode } = this.props;
     return (
       <div className="px-4 py-2">
-        <h2 class="about-h2" id="team-heading">
+        <h2
+          className={darkMode ? "about-h2" : "about-h2 text-dark"}
+          id="team-heading"
+        >
           Our Team
         </h2>
         <div className="team-row">

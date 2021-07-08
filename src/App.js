@@ -15,6 +15,7 @@ export default class App extends Component {
       NavMenu: false,
       Team: false,
       data: {},
+      darkMode: true,
     };
   }
   componentDidMount() {
@@ -35,33 +36,47 @@ export default class App extends Component {
   handleChangeState = (val) => {
     this.setState({ ...this.state, NavMenu: val });
   };
+  handleDarkModeChangeState = async (val) => {
+    await this.setState({ ...this.state, darkMode: val });
+    console.log(this.state.darkMode);
+  };
   handleTeamChangeState = async (val, data) => {
     // console.log(data);
     await this.setState({ ...this.state, Team: val, data: data });
     console.log(this.state);
   };
   render() {
+    const { darkMode } = this.state;
     return (
       <>
-        <div className="max-width bg-dark" id="desktop">
-          {this.state.NavMenu && <NavMenu />}
+        <div
+          className={darkMode ? "max-width bg-dark" : "max-width bg-light"}
+          id="desktop"
+        >
+          {this.state.NavMenu && <NavMenu darkMode={darkMode} />}
           <Navbar
             NavMenu={this.state}
+            darkMode={darkMode}
+            darkModeFunc={this.handleDarkModeChangeState}
             handleChangeState={this.handleChangeState}
           />
-          <Hero />
-          <Usage />
-          <About team={this.handleTeamChangeState} />
+          <Hero darkMode={darkMode} />
+          <Usage darkMode={darkMode} />
+          <About darkMode={darkMode} team={this.handleTeamChangeState} />
           {this.state.Team ? (
             <TeamView
               team={this.handleTeamChangeState}
               data={this.state.data}
             />
           ) : null}
-          <Timeline />
+          <Timeline darkMode={darkMode} />
         </div>
-        <div className="max-width pos-rel">
-          <Footer />
+        <div
+          className={
+            darkMode ? "max-width pos-rel" : "max-width pos-rel darkBack"
+          }
+        >
+          <Footer darkMode={darkMode} />
         </div>
         <span className="cursor"></span>
         <span className="pointer"></span>

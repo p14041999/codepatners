@@ -10,12 +10,24 @@
     .about-card {
       background-color: #221f34;
     }
+    .about-cardLight {
+      background-color: #4c4b4e;
+    }
     .about-card.active {
       background-color: #090520;
+    }
+    .activeLight {
+      background-color: #bdbdbd;
     }
   }
   .about-content {
     background-color: #090520;
+    flex-grow: 1;
+    height: 70vh;
+    max-width: 80%;
+  }
+  .about-contentLight {
+    background-color: #bdbdbd;
     flex-grow: 1;
     height: 70vh;
     max-width: 80%;
