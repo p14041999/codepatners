@@ -66,7 +66,9 @@ class Timeline extends Component {
                   2021
                 </p>
                 <h5 className="m-0 tlh5">Crypto Launch</h5>
-                <p className="tlp">ICO & Hybrid Blockchain</p>
+                <p className="tlp">
+                  ICO & Hybrid Blockchain Centralised Exchange
+                </p>
               </div>
             </div>
             <div className="timeline-comp" id="box3">
