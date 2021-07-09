@@ -24,7 +24,7 @@ class Timeline extends Component {
                 >
                   2020
                 </p>
-                <h5 className="m-0 tlh5">Presales</h5>
+                <h5 className="m-0 tlh5">Meetup</h5>
                 <p className="tlp">R&D and Concept Development</p>
               </div>
               <span className={darkMode ? "hrline" : "hrlineLight"}></span>
@@ -79,7 +79,7 @@ class Timeline extends Component {
                   className="p-big bold tlHead"
                   style={{ textTransform: "uppercase" }}
                 >
-                  2022
+                  Q1 2022
                 </p>
                 <h5 className="m-0 tlh5">Digital Step-in</h5>
                 <p className="tlp">Zenith pay -Digital Crypto Bank</p>
@@ -119,7 +119,7 @@ class Timeline extends Component {
                   className="p-big bold tlHead"
                   style={{ textTransform: "uppercase" }}
                 >
-                  2023
+                  Q2 2022
                 </p>
                 <h5 className="m-0 tlh5">Tokenized Realtor</h5>
                 <p className="tlp">Zenith Stay - Explore as a Realtor</p>
