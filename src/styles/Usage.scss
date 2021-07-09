@@ -28,7 +28,13 @@
       box-shadow: 0px 0px 30px grey;
       p.p-big {
         color: #42e8e0 !important;
+        font-weight: bolder;
       }
+      p.p-bigLight {
+        color: #090520 !important;
+        font-weight: bolder;
+      }
+      // color: #090520 !important;
       span.active {
         display: block;
         height: 10px;

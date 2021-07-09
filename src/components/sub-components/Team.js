@@ -47,7 +47,9 @@ export default class Team extends Component {
               }
             >
               <img src={CEOImage} className="team-image" alt="" />
-              <p className="p-big bold">Jonathan Emmanuel</p>
+              <p className={darkMode ? "p-big bold" : "p-big bold text-dark"}>
+                Jonathan Emmanuel
+              </p>
               <p className="text-secondary m-0">Founder / CEO</p>
             </div>
           </div>
@@ -71,7 +73,9 @@ export default class Team extends Component {
               }
             >
               <img src={CTOImage} className="team-image" alt="" />
-              <p className="p-big bold">Rajesh Chinnadurai</p>
+              <p className={darkMode ? "p-big bold" : "p-big bold text-dark"}>
+                Rajesh Chinnadurai
+              </p>
               <p className="text-secondary m-0">Co-Founder / CTO</p>
             </div>
           </div>
@@ -123,7 +127,9 @@ export default class Team extends Component {
               }
             >
               <img src={Director} className="team-image" alt="" />
-              <p className="p-big bold">Jerome Jones</p>
+              <p className={darkMode ? "p-big bold" : "p-big bold text-dark"}>
+                Jerome Jones
+              </p>
               <p className="text-secondary m-0">Director</p>
             </div>
           </div>

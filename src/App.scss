@@ -17,6 +17,15 @@ $h2-res: 26px;
 .darkBack {
   background-color: #171429;
 }
+.btnp {
+  background: none;
+  outline: none;
+  border: none;
+  color: #268ff1;
+}
+.btnp:hover {
+  cursor: pointer;
+}
 
 // Map Colors
 

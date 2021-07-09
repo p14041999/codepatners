@@ -57,7 +57,7 @@ export default class Usage extends Component {
                   this.setState({ p2p: true });
                 }}
               >
-                <p className="p-big">P2P Payments</p>
+                <p className="p-bigLight">P2P Payments</p>
                 <span className="active" id="usage-span1"></span>
               </div>
             )}
@@ -90,7 +90,7 @@ export default class Usage extends Component {
                   this.setState({ smartContract: true });
                 }}
               >
-                <p className="p-big">Smart Contracts</p>
+                <p className="p-bigLight">Smart Contracts</p>
                 <span className="active" id="usage-span2"></span>
               </div>
             )}
@@ -125,7 +125,7 @@ export default class Usage extends Component {
                 }}
                 id="usagebtn"
               >
-                <p className="p-big">NFT's</p>
+                <p className="p-bigLight">NFT's</p>
                 <span className="active" id="usage-span3"></span>
               </div>
             )}
@@ -158,7 +158,7 @@ export default class Usage extends Component {
                   this.setState({ defi: true });
                 }}
               >
-                <p className="p-big">De-Finance</p>
+                <p className="p-bigLight">De-Finance</p>
                 <span className="active" id="usage-span4"></span>
               </div>
             )}
