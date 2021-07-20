@@ -185,9 +185,11 @@ export default class SmartContract extends Component {
                 </button>
               )}
             </p>
-            <button className="bg-primary border-0 text-light px-4 py-2 mt-2">
-              <h5 className="m-0">Explore Smart Contract</h5>
-            </button>
+            <a href="https://docs.zenithchain.co/Contract" target="_blank">
+              <button className="bg-primary border-0 text-light px-4 py-2 mt-2">
+                <h5 className="m-0">Explore Smart Contract</h5>
+              </button>
+            </a>
           </div>
           <div className="col">
             <img className="img-full" src={SmartContractLogo} alt="" />

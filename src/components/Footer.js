@@ -7,7 +7,7 @@ export default class Footer extends Component {
     return (
       <>
         {darkMode ? (
-          <div className="container py-8 text-dark">
+          <div id="footer" className="container py-8 text-dark">
             <div className="footer-row">
               <div className="footer-col-1">
                 <div className="footer-logo-group text-primary">
@@ -17,30 +17,94 @@ export default class Footer extends Component {
                   </h2>
                 </div>
                 <p>
-                  Contact TipStack Inc. regarding product and its distribution.
+                  Contact Zenith Chain Limited. regarding product and its
+                  distribution.
                 </p>
                 <p>Email: info@zenithchain.co</p>
-                <p>Address: 651 N Broad St Suite 206 Middletown, DE 19709</p>
+                <p>Address: vytauto str33, Vilnius Lithuania</p>
               </div>
               <div className="footer-col-2">
                 <div className="footer-link-col">
                   <h5>Individuals</h5>
-                  <p>Zenith Coin (ZTC)</p>
-                  <p>Zenith Wallet</p>
-                  <p>Zenith Exchange</p>
-                  <p>Connect to Metamask</p>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://zenithchain.co"
+                  >
+                    <p>Zenith Chain (ZTC)</p>
+                  </a>
+                  {/* <a style={{textDecoration:"none",color:"black"}}target="_blank" href="https://docs.zenithchain.co">
+                <p>Zenith Wallet</p>
+              </a> */}
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co"
+                  >
+                    <p>Zenith Exchange</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Wallet"
+                  >
+                    <p>Connect to Metamask</p>
+                  </a>
                 </div>
                 <div className="footer-link-col">
                   <h5>For Businesses</h5>
-                  <p>Zenith Exchange API</p>
-                  <p>Zenith Wallet API</p>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co"
+                  >
+                    <p>Zenith Exchange API</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Wallet"
+                  >
+                    <p>Zenith Wallet API</p>
+                  </a>
                 </div>
                 <div className="footer-link-col">
                   <h5>For Developer</h5>
-                  <p>Zenith Chain API</p>
-                  <p>Documentation</p>
-                  <p>Smart Contract Specs.</p>
-                  <p>Connect to Metamask</p>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co"
+                  >
+                    <p>Zenith Chain API</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co"
+                  >
+                    <p>Documentation</p>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Contract"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <p>Smart Contract Specs.</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Wallet"
+                  >
+                    <p>Connect to Metamask</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Token"
+                  >
+                    <p>ZRC Token Specifications</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -49,7 +113,7 @@ export default class Footer extends Component {
             </div>
             <p className="bold text-center pt-4 m-0" id="copyrights">
               &copy; 2021 All right researved by Zenith Chain and its owner
-              TipStack Inc.
+              Zenith Chain Limited.
             </p>
 
             {/*
@@ -175,7 +239,7 @@ export default class Footer extends Component {
             </svg>
           </div>
         ) : (
-          <div className="container py-8 text-light darkBack">
+          <div id="footer" className="container py-8 text-light darkBack">
             <div className="footer-row">
               <div className="footer-col-1">
                 <div className="footer-logo-group text-primary">
@@ -185,30 +249,94 @@ export default class Footer extends Component {
                   </h2>
                 </div>
                 <p>
-                  Contact TipStack Inc. regarding product and its distribution.
+                  Contact Zenith Chain Limited. regarding product and its
+                  distribution.
                 </p>
                 <p>Email: info@zenithchain.co</p>
-                <p>Address: 651 N Broad St Suite 206 Middletown, DE 19709</p>
+                <p>Address: vytauto str33, Vilnius Lithuania</p>
               </div>
               <div className="footer-col-2">
                 <div className="footer-link-col">
                   <h5>Individuals</h5>
-                  <p>Zenith Coin (ZTC)</p>
-                  <p>Zenith Wallet</p>
-                  <p>Zenith Exchange</p>
-                  <p>Connect to Metamask</p>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://zenithchain.co"
+                  >
+                    <p>Zenith Chain (ZTC)</p>
+                  </a>
+                  {/* <a style={{textDecoration:"none",color:"black"}}target="_blank" href="https://docs.zenithchain.co">
+                <p>Zenith Wallet</p>
+              </a> */}
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co"
+                  >
+                    <p>Zenith Exchange</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Wallet"
+                  >
+                    <p>Connect to Metamask</p>
+                  </a>
                 </div>
                 <div className="footer-link-col">
                   <h5>For Businesses</h5>
-                  <p>Zenith Exchange API</p>
-                  <p>Zenith Wallet API</p>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co"
+                  >
+                    <p>Zenith Exchange API</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Wallet"
+                  >
+                    <p>Zenith Wallet API</p>
+                  </a>
                 </div>
                 <div className="footer-link-col">
                   <h5>For Developer</h5>
-                  <p>Zenith Chain API</p>
-                  <p>Documentation</p>
-                  <p>Smart Contract Specs.</p>
-                  <p>Connect to Metamask</p>
+
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co"
+                  >
+                    <p>Zenith Chain API</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co"
+                  >
+                    <p>Documentation</p>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Contract"
+                  >
+                    <p>Smart Contract Specs.</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Wallet"
+                  >
+                    <p>Connect to Metamask</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://docs.zenithchain.co/Token"
+                  >
+                    <p>ZRC Token Specifications</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -217,7 +345,7 @@ export default class Footer extends Component {
             </div>
             <p className="bold text-center pt-4 m-0" id="copyrights">
               &copy; 2021 All right researved by Zenith Chain and its owner
-              TipStack Inc.
+              Zenith Chain Limited.
             </p>
 
             {/*

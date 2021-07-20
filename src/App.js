@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import NavMenu from "./components/NavbarMenu";
 import Timeline from "./components/Timeline";
 import TeamView from "./components/sub-components/TeamView";
+import Features from "./components/Features";
+import Teame from "./components/Teame";
 export default class App extends Component {
   constructor() {
     super();
@@ -53,7 +55,12 @@ export default class App extends Component {
           className={darkMode ? "max-width bg-dark" : "max-width bg-light"}
           id="desktop"
         >
-          {this.state.NavMenu && <NavMenu darkMode={darkMode} />}
+          {this.state.NavMenu && (
+            <NavMenu
+              handleChangeState={this.handleChangeState}
+              darkMode={darkMode}
+            />
+          )}
           <Navbar
             NavMenu={this.state}
             darkMode={darkMode}
@@ -62,15 +69,18 @@ export default class App extends Component {
           />
           <Hero darkMode={darkMode} />
           <Usage darkMode={darkMode} />
-          <About darkMode={darkMode} team={this.handleTeamChangeState} />
-          {this.state.Team ? (
+          {/* <About darkMode={darkMode} team={this.handleTeamChangeState} /> */}
+          {/* {this.state.Team ? (
             <TeamView
               team={this.handleTeamChangeState}
               data={this.state.data}
             />
-          ) : null}
+          ) : null} */}
+          <Features />
           <Timeline darkMode={darkMode} />
+          <Teame />
         </div>
+
         <div
           className={
             darkMode ? "max-width pos-rel" : "max-width pos-rel darkBack"

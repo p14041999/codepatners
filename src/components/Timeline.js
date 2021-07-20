@@ -7,9 +7,12 @@ class Timeline extends Component {
     return (
       <>
         <div id="pc">
-          <h3 id={darkMode ? "timeline-title" : "timeline-titleLight"}>
+          <h2
+            id={darkMode ? "timeline-title" : "timeline-titleLight"}
+            style={{ textAlign: "center", fontSize: 45 }}
+          >
             Roadmap
-          </h3>
+          </h2>
           <div className="py-3 px-3" id="timeline-cont">
             <div className="vertical-line"></div>
             <div className="timeline-comp " id="box1">
@@ -66,7 +69,7 @@ class Timeline extends Component {
                   2021
                 </p>
                 <h5 className="m-0 tlh5">Crypto Launch</h5>
-                <p className="tlp">
+                <p className="tlp" id="api1">
                   ICO & Hybrid Blockchain Centralised Exchange
                 </p>
               </div>
@@ -156,7 +159,9 @@ class Timeline extends Component {
                   2021
                 </p>
                 <h5 className="m-0 tlh5">Crypto Launch</h5>
-                <p className="tlp">ICO & Hybrid Blockchain</p>
+                <p className="tlp" id="api1">
+                  ICO & Hybrid Blockchain
+                </p>
               </div>
             </div>
             <div className="timeline-comp">
