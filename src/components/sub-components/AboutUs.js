@@ -2,9 +2,12 @@ import React, { Component } from "react";
 
 export default class AboutUs extends Component {
   render() {
+    const { darkMode } = this.props;
     return (
       <div className="px-4 py-2">
-        <h2 class="about-h2">About Us</h2>
+        <h2 className={darkMode ? "about-h2" : "about-h2 text-dark"}>
+          About Us
+        </h2>
         <p className="text-secondary">
           Zenith Chain is going to offer varieties of services within the scope
           of the blockchain (cryptocurrency and digital payment system) industry

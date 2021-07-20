@@ -1,10 +1,14 @@
+import { dark } from "@material-ui/core/styles/createPalette";
 import React, { Component } from "react";
 
 export default class Structure extends Component {
   render() {
+    const { darkMode } = this.props;
     return (
       <div className="px-4 py-2">
-        <h2 class="about-h2">Business Structure</h2>
+        <h2 className={darkMode ? "about-h2" : "about-h2 text-dark"}>
+          Business Structure
+        </h2>
         <p className="text-secondary">
           Ordinarily we would have settled for two or three staff members, but
           as part of our plan to build a standard blockchain platform &
