@@ -19,10 +19,13 @@ class Teame extends Component {
               <a href="#">
                 <Facebook className="icons" />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/Je_zenith">
                 <Twitter className="icons" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/engrjonathan"
+                target="_blank"
+              >
                 <LinkedIn className="icons" />
               </a>
             </div>
@@ -32,13 +35,16 @@ class Teame extends Component {
             <h5 className="text-light">Rajesh Chinnadurai</h5>
             <p className="text-light">Co-Founder / CTO</p>
             <div className="icons-container">
-              <a href="#">
+              <a href="https://www.facebook.com/rajeshodcvec" target="_blank">
                 <Facebook className="icons" />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/rajesh_odc?s=08" target="_blank">
                 <Twitter className="icons" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/rajesh-chinnadurai-a0ab4460"
+                target="_blank"
+              >
                 <LinkedIn className="icons" />
               </a>
             </div>

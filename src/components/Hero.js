@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../styles/Hero.scss";
 import "../styles/Mobile.scss";
 import HeroImage from "../assets/heroImage.png";
-import { Facebook, Twitter, YouTube, Instagram } from "@material-ui/icons";
+import { Facebook, Twitter, LinkedIn, Telegram } from "@material-ui/icons";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { withStyles } from "@material-ui/styles";
 
@@ -76,17 +76,20 @@ class Hero extends Component {
               </button>
             </a>
             <div className="icons-container">
-              <a href="#">
+              {/* <a href="#">
                 <Facebook className="icons" />
-              </a>
-              <a href="#">
+              </a> */}
+              <a href="https://twitter.com/zenithchain_co" target="_blank">
                 <Twitter className="icons" />
               </a>
-              <a href="#">
-                <YouTube className="icons" />
+              <a
+                href="https://www.linkedin.com/company/zenith-chain/"
+                target="_blank"
+              >
+                <LinkedIn className="icons" />
               </a>
-              <a href="#">
-                <Instagram className="icons" />
+              <a href="https://t.me/zenithchain" target="_blank">
+                <Telegram className="icons" />
               </a>
             </div>
           </div>

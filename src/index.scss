@@ -8,6 +8,9 @@ body {
   overflow: none;
   cursor: none;
 }
+button:hover {
+  cursor: pointer;
+}
 ::-webkit-scrollbar {
   width: 0;
   display: none;
