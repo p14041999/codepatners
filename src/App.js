@@ -12,8 +12,9 @@ import Features from "./components/Features";
 import Teame from "./components/Teame";
 import Sub1 from "./components/Sub1";
 import Sub6 from "./components/Sub6";
+import Sub5 from "./components/Sub5";
 import Sub3 from "./components/Sub3";
-import "./styles/mobile2.scss"
+import "./styles/mobile2.scss";
 
 export default class App extends Component {
   constructor() {
@@ -86,6 +87,7 @@ export default class App extends Component {
           <Sub6 />
           <Timeline darkMode={darkMode} />
           <Sub3 />
+          <Sub5 />
           <Teame />
         </div>
 
