@@ -1,0 +1,21 @@
+.father {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 300px 0px;
+  color: white;
+}
+.son {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 80px;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.9rem;
+    color: gray;
+  }
+}
