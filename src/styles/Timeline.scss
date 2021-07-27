@@ -62,8 +62,8 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-top: 0px;
-  height: 1000px;
+  // padding-top: 0px;
+  // height: 1000px;
   align-items: center;
   z-index: 6;
 }
@@ -74,6 +74,9 @@
 }
 #api1 {
   text-align: end !important;
+}
+.end {
+  text-align: end;
 }
 
 #box1 {
@@ -130,7 +133,7 @@
 }
 .vertical-line {
   width: 4px;
-  height: 558px;
+  height: 1648px;
   background-color: #c4c4c4;
   margin: 0px auto;
   position: absolute;
