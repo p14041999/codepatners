@@ -1,0 +1,39 @@
+.feat-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 70%;
+  margin: 0px 15%;
+
+  .carduu-cont {
+    margin: 60px 0px;
+    .top-cont {
+      display: flex;
+      .carduu {
+        // border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        margin: 20px 0px;
+        h4 {
+          margin: 30px 0px 0px 0px;
+          font-size: 1.3rem;
+        }
+        p {
+          color: gray;
+        }
+        img {
+          width: 7rem;
+          padding: 30px 20px;
+        }
+      }
+    }
+  }
+}

@@ -31,13 +31,13 @@ export default class About extends Component {
     // console.log(team);
     return (
       <>
-        <div className="container text-light py-7 desktop">
+        <div className="container text-light py-7 desktop" id="aboutus">
           <h4 className={darkMode ? "text-light" : "text-dark"}>
             About Zenith
           </h4>
           <div className="about-row">
             <div className="about-sidebar">
-              {darkMode ? (
+              {/* {darkMode ? (
                 <div
                   className={
                     this.state.about
@@ -65,8 +65,8 @@ export default class About extends Component {
                 >
                   <p className="p-big m-0 px-3 py-4">About Us</p>
                 </div>
-              )}
-              {darkMode ? (
+              )} */}
+              {/* {darkMode ? (
                 <div
                   className={
                     this.state.mission
@@ -94,8 +94,8 @@ export default class About extends Component {
                 >
                   <p className="p-big m-0 px-3 py-4">Mission & Vision</p>
                 </div>
-              )}
-              {darkMode ? (
+              )} */}
+              {/* {darkMode ? (
                 <div
                   className={
                     this.state.structure
@@ -123,7 +123,7 @@ export default class About extends Component {
                 >
                   <p className="p-big m-0 px-3 py-4">Business Structure</p>
                 </div>
-              )}
+              )} */}
               {darkMode ? (
                 <div
                   className={

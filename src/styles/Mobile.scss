@@ -1,4 +1,22 @@
 @media only screen and (max-width: 900px) {
+  #ase {
+    font-size: 30px !important;
+  }
+  .team-contee {
+    flex-direction: column;
+  }
+  .teame .team-contee .team-card {
+    margin: 0px 5rem;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+  }
+  .top-cont {
+    flex-direction: column;
+  }
+  .carduu {
+    width: initial !important;
+    padding: 0 !important;
+  }
   .full .mainCont {
     flex-direction: column;
     right: -2% !important;

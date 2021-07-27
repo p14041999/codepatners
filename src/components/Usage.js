@@ -33,39 +33,6 @@ export default class Usage extends Component {
             {darkMode ? (
               <div
                 className={
-                  this.state.p2p
-                    ? "usage-card px-5 py-2 active"
-                    : "usage-card px-5 py-2"
-                }
-                onClick={(e) => {
-                  this.resetAll();
-                  this.setState({ p2p: true });
-                }}
-              >
-                <p className="p-big">P2P Payments</p>
-                <span className="active" id="usage-span1"></span>
-              </div>
-            ) : (
-              <div
-                className={
-                  this.state.p2p
-                    ? "usage-cardLight px-5 py-2 activeLight"
-                    : "usage-cardLight px-5 py-2"
-                }
-                onClick={(e) => {
-                  this.resetAll();
-                  this.setState({ p2p: true });
-                }}
-              >
-                <p className="p-bigLight">P2P Payments</p>
-                <span className="active" id="usage-span1"></span>
-              </div>
-            )}
-          </div>
-          <div className="usage-col">
-            {darkMode ? (
-              <div
-                className={
                   this.state.smartContract
                     ? "usage-card px-5 py-2 active"
                     : "usage-card px-5 py-2"
@@ -163,11 +130,45 @@ export default class Usage extends Component {
               </div>
             )}
           </div>
+
+          <div className="usage-col">
+            {darkMode ? (
+              <div
+                className={
+                  this.state.p2p
+                    ? "usage-card px-5 py-2 active"
+                    : "usage-card px-5 py-2"
+                }
+                onClick={(e) => {
+                  this.resetAll();
+                  this.setState({ p2p: true });
+                }}
+              >
+                <p className="p-big">Tokenized BNB</p>
+                <span className="active" id="usage-span1"></span>
+              </div>
+            ) : (
+              <div
+                className={
+                  this.state.p2p
+                    ? "usage-cardLight px-5 py-2 activeLight"
+                    : "usage-cardLight px-5 py-2"
+                }
+                onClick={(e) => {
+                  this.resetAll();
+                  this.setState({ p2p: true });
+                }}
+              >
+                <p className="p-bigLight">Tokenized BNB</p>
+                <span className="active" id="usage-span1"></span>
+              </div>
+            )}
+          </div>
         </div>
-        {this.state.p2p && <P2P />}
-        {this.state.smartContract && <SmartContract />}
-        {this.state.defi && <DeFi />}
-        {this.state.nft && <NFT />}
+        {this.state.p2p && <P2P darkMode={darkMode} />}
+        {this.state.smartContract && <SmartContract darkMode={darkMode} />}
+        {this.state.defi && <DeFi darkMode={darkMode} />}
+        {this.state.nft && <NFT darkMode={darkMode} />}
       </div>
     );
   }

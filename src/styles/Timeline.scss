@@ -6,12 +6,13 @@
   justify-content: center;
   //   border-left: 2px solid red;
   .timeline-box {
-    max-width: 499px;
+    max-width: 342px;
     width: 499px;
     height: 201px;
     background: #ffffff1a;
-    padding: 0px 70px;
+    padding: 0px 32px;
     box-sizing: border-box;
+    height: 161px;
   }
   .timeline-boxLight {
     max-width: 499px;
@@ -71,6 +72,9 @@
   border-top: 3px solid #171429 !important ;
   z-index: -1;
 }
+#api1 {
+  text-align: end !important;
+}
 
 #box1 {
   //   position: absolute;
@@ -126,7 +130,7 @@
 }
 .vertical-line {
   width: 4px;
-  height: 670px;
+  height: 558px;
   background-color: #c4c4c4;
   margin: 0px auto;
   position: absolute;

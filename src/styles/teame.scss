@@ -1,0 +1,25 @@
+.teame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  .team-contee {
+    display: flex;
+    .team-card {
+      margin: 0px 5rem;
+      margin-bottom: 20px;
+      padding: 20px;
+      //   border: 2px solid white;
+      img {
+        width: 200px;
+      }
+      h5 {
+        margin: 10px 0 10px 10px;
+      }
+      p {
+        margin: 10px 0 0px 10px;
+      }
+    }
+  }
+}

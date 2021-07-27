@@ -1,3 +1,4 @@
+import { dark } from "@material-ui/core/styles/createPalette";
 import React, { Component } from "react";
 import P2Plogo from "../../assets/p2p.svg";
 export default class P2P extends Component {
@@ -15,6 +16,7 @@ export default class P2P extends Component {
   };
   render() {
     const { darkMode } = this.props;
+    // console.log(darkMode);
     return (
       <div className="py-7">
         <div className="row">

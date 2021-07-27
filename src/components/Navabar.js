@@ -3,6 +3,7 @@ import logo from "../assets/logo.svg";
 import logoblue from "../assets/logoblue.svg";
 import "../styles/Navbar.scss";
 import { FormControlLabel, Switch } from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
 export default class Navabar extends Component {
   constructor() {
     super();
@@ -32,15 +33,24 @@ export default class Navabar extends Component {
           <div onClick={this.handleMenuBtnClick}>
             {darkMode ? (
               <div id="menubtn">
-                <span
+                {/* <span
                   className={this.state.NavMenu ? "blue" : "hamburger"}
-                ></span>
+                ></span> */}
+                <MenuIcon
+                  id="ase"
+                  className={this.state.NavMenu ? "blue" : "hamburger"}
+                  style={{ fontSize: 45 }}
+                />
               </div>
             ) : (
               <div id="menubtn">
-                <span
+                {/* <span
                   className={this.state.NavMenu ? "hamburger" : "blue"}
-                ></span>
+                ></span> */}
+                <MenuIcon
+                  style={{ fontSize: 45 }}
+                  className={this.state.NavMenu ? "hamburger" : "blue"}
+                />
               </div>
             )}
           </div>
@@ -61,8 +71,9 @@ export default class Navabar extends Component {
               )}
             </div>
           )}
+          <span></span>
 
-          <div>
+          {/* <div>
             <FormControlLabel
               style={
                 this.state.darkMode
@@ -78,7 +89,7 @@ export default class Navabar extends Component {
               }
               label="Dark Mode"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     );
