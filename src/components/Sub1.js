@@ -22,8 +22,8 @@ class Sub1 extends Component {
       email: "", // Your customer's email address
       redirectURL: "",
       hostURL: window.location.origin,
-      widgetHeight: "550px",
-      widgetWidth: "450px",
+      widgetHeight: "600px",
+      widgetWidth: "350px",
     });
     transak.init();
 

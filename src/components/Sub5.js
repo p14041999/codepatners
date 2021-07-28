@@ -11,13 +11,13 @@ class Sub5 extends Component {
   render() {
     return (
       <div className="sub5" id="sub5" data-aos="fade-down">
-        <h1>Don’t miss out, Stay updated</h1>
+        <h1>Join Our Community</h1>
         <p>Connect with us through Social Media Links given Below:</p>
         {/* <div id="input-cont">
           <input id="input" type="text" />
           <button>Subscribe</button>
         </div> */}
-        <div style={{ marginTop: 20 }}>
+        <div>
           <a
             href="https://www.linkedin.com/company/zenith-chain/"
             target="_blank"

@@ -8,8 +8,8 @@ import "../styles/teame.scss";
 class Teame extends Component {
   render() {
     return (
-      <div className="teame">
-        <h2>Core Team</h2>
+      <div className="teame" data-aos="fade-down">
+        <h2 style={{ marginTop: 143 }}>Core Team</h2>
         <div className="team-contee">
           <div className="team-card">
             <img src={ceo} />

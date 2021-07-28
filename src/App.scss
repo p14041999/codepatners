@@ -10,6 +10,29 @@ $h5: 18px;
 $p: 14px;
 $h1-res: 36px;
 $h2-res: 26px;
+#pop {
+  position: absolute;
+  top: 41px;
+  right: 22px;
+  z-index: 999999;
+}
+#video {
+  width: 45%;
+  // height: 500px;
+  // margin: 250px 15%;
+}
+#videocont {
+  display: flex;
+  padding: 0px 100px;
+  margin: 350px 0px;
+  #videodiv {
+    color: white;
+    padding: 0px 70px;
+    p {
+      color: gray;
+    }
+  }
+}
 
 .text-center {
   text-align: center;
@@ -17,6 +40,7 @@ $h2-res: 26px;
 .darkBack {
   background-color: #171429;
 }
+
 .btnp {
   background: none;
   outline: none;

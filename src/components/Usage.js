@@ -7,8 +7,8 @@ import DeFi from "./sub-components/DeFi";
 export default class Usage extends Component {
   state = {
     defi: false,
-    smartContract: false,
-    p2p: true,
+    smartContract: true,
+    p2p: false,
     nft: false,
   };
   constructor(props) {
@@ -26,7 +26,11 @@ export default class Usage extends Component {
   render() {
     const { darkMode } = this.props;
     return (
-      <div className="container py-7 text-light " id="useCase">
+      <div
+        className="container py-7 text-light "
+        id="useCase"
+        data-aos="fade-down"
+      >
         <h4 className={darkMode ? "text-light" : "text-dark"}>Use cases</h4>
         <div className="usage-content">
           <div className="usage-col">

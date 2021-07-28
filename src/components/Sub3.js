@@ -21,15 +21,15 @@ class Sub3 extends Component {
             trusted as concepts belt.
           </p>
           <div id="sub3-btn-cont">
-            {/* <div className="sub3Btn">
+            <div className="sub3Btn">
               <img src={play} />
               <button>Play Store</button>
             </div>
             <div className="sub3Btn">
               <img src={apple} />
               <button>App Store</button>
-            </div> */}
-            <h3>Wallet Coming Soon...</h3>
+            </div>
+            {/* <h3>Wallet Coming Soon...</h3> */}
           </div>
         </div>
       </div>

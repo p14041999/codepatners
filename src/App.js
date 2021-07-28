@@ -1,4 +1,6 @@
 import "./App.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import React, { Component } from "react";
 import Navbar from "./components/Navabar";
 import Hero from "./components/Hero";
@@ -15,6 +17,7 @@ import Sub6 from "./components/Sub6";
 import Sub5 from "./components/Sub5";
 import Sub3 from "./components/Sub3";
 import "./styles/mobile2.scss";
+import video from "./assets/video.mp4";
 
 export default class App extends Component {
   constructor() {
@@ -39,6 +42,10 @@ export default class App extends Component {
         "style",
         `top:${e.pageY - 2.5}px;left:${e.pageX - 2.5}px`
       );
+    });
+    AOS.init({
+      // initialise with other settings
+      duration: 2000,
     });
   }
   handleChangeState = (val) => {
@@ -67,12 +74,17 @@ export default class App extends Component {
               darkMode={darkMode}
             />
           )}
+
           <Navbar
             NavMenu={this.state}
             darkMode={darkMode}
             darkModeFunc={this.handleDarkModeChangeState}
             handleChangeState={this.handleChangeState}
           />
+          <div id="pop">
+            <button className="btn-nav">Zenith Wallet</button>
+            <button className="btn-nav">Connect With MetaMask</button>
+          </div>
           <Hero darkMode={darkMode} />
           <Usage darkMode={darkMode} />
           {/* <About darkMode={darkMode} team={this.handleTeamChangeState} /> */}
@@ -85,7 +97,26 @@ export default class App extends Component {
           <Features />
           <Sub1 />
           <Sub6 />
-          <Timeline darkMode={darkMode} />
+          <div id="videocont" data-aos="fade-down">
+            <div id="videodiv">
+              <h2>Zenith Chain</h2>
+              <p>
+                Zenith Chian combines the best of Ethereum and sovereign
+                blockchains into an attractive feature set. Built by developers,
+                for developers.Zenith Chian combines the best of Ethereum and
+                sovereign blockchains into an attractive feature set. Built by
+                developers, for developers.Zenith Chian combines the best of
+                Ethereum and sovereign blockchains into an attractive feature
+                set. Built by developers, for developers.
+              </p>
+            </div>
+            <video id="video" controls loop autoPlay muted>
+              <source src={video} type="video/mp4" />
+
+              <source src="movie.ogg" type="video/ogg" />
+            </video>
+          </div>
+          {/* <Timeline darkMode={darkMode} /> */}
           <Sub3 />
           <Sub5 />
           <Teame />

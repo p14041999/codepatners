@@ -99,6 +99,14 @@
   .sub5 {
     width: 80%;
     margin-left: 10%;
+    h1 {
+      font-size: 1.5rem !important;
+      // margin: 10px 0px;
+      top: 10px;
+    }
+    p {
+      font-size: 0.8rem;
+    }
   }
   .father {
     display: flex;
@@ -195,7 +203,7 @@
     }
     #globe {
       position: absolute;
-      top: 262px;
+      top: 150px;
       z-index: -1;
       width: 217%;
     }

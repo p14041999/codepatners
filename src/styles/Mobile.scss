@@ -2,6 +2,20 @@
   #ase {
     font-size: 30px !important;
   }
+  .father {
+    margin: 100px auto !important;
+  }
+  #videocont {
+    margin: initial;
+    flex-direction: column-reverse;
+    padding: 0px 20px !important;
+    #video {
+      width: 100%;
+    }
+    #videodiv {
+      padding: 20px 0px;
+    }
+  }
   .team-contee {
     flex-direction: column;
   }
@@ -40,7 +54,10 @@
     flex-direction: column;
   }
   #hero-container {
-    margin-bottom: 400px;
+    margin-bottom: 40px;
+  }
+  #pop {
+    display: none;
   }
 
   // #hero-img {

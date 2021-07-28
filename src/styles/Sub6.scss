@@ -4,6 +4,20 @@
   align-items: center;
   margin: 0px 0px 300px 0px;
   color: white;
+  background: linear-gradient(
+    233.46deg,
+    #0f1dff -36.8%,
+    #8a32e0 45.12%,
+    #b035e4 128.76%
+  );
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  width: 90%;
+}
+#acon {
+  margin: 10px 0px;
+  font-size: 50px;
 }
 .son {
   display: flex;
@@ -11,11 +25,13 @@
   margin: 0px 80px;
   align-items: center;
   justify-content: center;
+  width: 30%;
   p {
     font-size: 2rem;
   }
   h4 {
     font-size: 1.9rem;
     color: gray;
+    margin: 10px 0;
   }
 }

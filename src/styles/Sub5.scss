@@ -8,7 +8,7 @@
   margin: 200px 370px;
   // margin-bottom: 0px;
   padding-bottom: 30px;
-  height: 283px;
+  height: 200px;
   width: 850px;
   // height: 40px;
   background: linear-gradient(
@@ -28,13 +28,13 @@
     z-index: 1;
     position: absolute;
     top: 2px;
-    right: 121px;
+    // right: 121px;
     font-size: 45px;
   }
   p {
     // width: 60%;
     font-size: 1.2rem;
-    margin-top: 80px;
+    margin-top: 117px;
   }
   a {
     color: white;
@@ -70,7 +70,7 @@
 
 #globe {
   position: absolute;
-  top: 150px;
+  top: 76px;
   z-index: -1;
 }
 
