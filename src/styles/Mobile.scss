@@ -231,10 +231,74 @@
   //   margin-top: 35pc;
   // }
   #pc {
-    display: none;
+    display: none !important;
   }
   #mobileTimeline {
     display: block !important;
+    position: relative;
+    .hrline {
+      border-right: 3px solid white;
+      position: absolute;
+      top: 88px;
+      height: 1017px;
+
+      left: 70px;
+      .round {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(0, 110, 255);
+        border-radius: 50%;
+        position: absolute;
+      }
+      .r1 {
+        top: -1px;
+        left: -9px;
+      }
+      .r2 {
+        top: 103px;
+        left: -9px;
+      }
+      .r3 {
+        top: 193px;
+        left: -9px;
+      }
+      .r4 {
+        top: 280px;
+        left: -9px;
+      }
+      .r5 {
+        top: 385px;
+        left: -9px;
+      }
+      .r6 {
+        top: 490px;
+        left: -9px;
+      }
+      .r7 {
+        top: 595px;
+        left: -9px;
+      }
+      .r8 {
+        top: 748px;
+        left: -9px;
+      }
+      .r9 {
+        top: 878px;
+        left: -9px;
+      }
+      .r10 {
+        top: 999px;
+        left: -9px;
+      }
+      .r7 .r8 .r9 .r10 {
+        background-color: initial;
+        border: 2px solid white;
+      }
+    }
+    .timeline-cont {
+      padding-left: 151px;
+      padding-right: 20px;
+    }
 
     // height: 201px !important;
   }

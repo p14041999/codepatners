@@ -116,7 +116,7 @@ export default class App extends Component {
               <source src="movie.ogg" type="video/ogg" />
             </video>
           </div>
-          {/* <Timeline darkMode={darkMode} /> */}
+          <Timeline />
           <Sub3 />
           <Sub5 />
           <Teame />
