@@ -11,7 +11,7 @@ class Hero extends Component {
     const { classes, darkMode } = this.props;
 
     return (
-      <div className="container" id="hero-container">
+      <div className="container" id="hero-container" data-aos="fade-down">
         <div className="hero-area py-7" id="hero-comp">
           <div className="col">
             <div className="get-started">
@@ -50,8 +50,8 @@ class Hero extends Component {
             <p className="text-secondary">
               ZenithChain is a digital peer to peer network that aims to
               implement a use case specific blockchain, designed to efficiently
-              handle one specific function: the transfer of assets from one
-              party to another.
+              handle one single function: the transfer of assets from one party
+              to another.
             </p>
             <a
               href="https://docs.zenithchain.co"

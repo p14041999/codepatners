@@ -5,6 +5,28 @@
   justify-content: space-between;
   align-items: center;
 }
+.btn-nav {
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  // font-weight: bold;
+  font-size: 15px;
+  background: linear-gradient(
+    233.46deg,
+    #0f1dff -36.8%,
+    #8a32e0 45.12%,
+    #b035e4 128.76%
+  );
+  // border: 0.7px solid white;
+  // font-family: ;
+}
+.btn-nav:hover {
+  box-shadow: 0 0 20px #eee;
+  background-position: right center; /* change the direction of the change here */
+}
 .hamburger {
   // display: block;
   // width: 30px;

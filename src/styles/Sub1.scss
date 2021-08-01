@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+.containerSub1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 350px;
+  .child1 {
+    // margin: 0px 20px;
+    margin-left: 10px;
+    margin-right: 50px;
+    width: 50%;
+
+    button {
+      background: linear-gradient(
+        91.99deg,
+        #0f1dff -4.93%,
+        #8a32e0 45.91%,
+        #b035e4 97.82%
+      );
+      border: none;
+      padding: 20px;
+      width: 250px !important;
+      color: white;
+    }
+    .btn {
+      flex: 1 1 auto;
+      margin: 10px;
+      // padding: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+
+      border-radius: 10px;
+    }
+    .btn:hover {
+      box-shadow: 0 0 20px #eee;
+      background-position: right center; /* change the direction of the change here */
+    }
+    .btne-1 {
+      background-image: linear-gradient(
+        to right,
+        #f6d365 0%,
+        #fda085 51%,
+        #f6d365 100%
+      );
+    }
+    h1 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 76px;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      padding-left: 50px;
+      border-left: 2px solid #afafaf;
+      color: #afafaf;
+      max-width: 609px;
+    }
+    #btn-cont {
+      display: flex;
+      padding: 34px 0;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+        img {
+          margin: 0px 10px;
+        }
+        p {
+          color: #afafaf !important;
+        }
+      }
+    }
+  }
+}
