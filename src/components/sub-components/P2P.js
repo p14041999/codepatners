@@ -22,25 +22,40 @@ export default class P2P extends Component {
         <div className="row">
           <div className="col">
             <h2 className={darkMode ? "text-light" : "text-dark"}>
-              Transfer from person to person with ease
+              Tokenized BNB
             </h2>
             <p className="text-secondary">
-              Peer-to-Peer Exchange <br />
-              P2P crypto exchange is essentially the decentralized form of
-              exchange, maintained and operated exclusively on a
-              blockchain-powered software or platform. In usual scenarios, there
-              is always intermediaries involved to execute transactions and
-              trade. In a p2p exchange, no third-party or intermediaries oversee
-              the transactions.
-              <br /> Rise of P2P Exchange
-              <br /> P2P exchange came into prevalence in 2014, when
-              cryptocurrency faced setbacks in the form of scams. Due to which,
-              many countries denied the use of cryptocurrencies. It gave rise to
-              a new system that we today know as p2p cryptocurrency exchanges.
-              It is quite contrary to the centralized way of exchanging money,
-              where two companies or entities can directly exchange
-              cryptocurrency.
-              {this.state.readMore ? (
+              A tokenized BNB property would offer middle ground between these
+              two options. Investors who would rather capture rental cash flow
+              distributions than hold shares of corporate stock BUT prefer the
+              ease of real-time trading are best suited for security tokens.
+              <br />
+              Property Owner (Token Issuer)
+              <br />
+              Can sell off as many tokens as the owner deems fit, in exchange
+              for immediate liquid capital
+              <br />
+              The owner would collect a lump sum from the initial token sale and
+              partial cash flows from the remaining ownership
+              <br />
+              Useful for owners with other capital intensive projects in need of
+              liquidity
+              <br />
+              Can structure the tokens to be retired at a certain date (with a
+              premium, for example) to recoup full ownership down the road
+              <br />
+              Investor (Token Holder)
+              <br />
+              A more seamless method of crowdsourcing for the rental property,
+              especially for those unable to acquire a full investment property
+              <br />
+              Diversified investment opportunity that can be used to target
+              geographic areas, trends, and hedge against traditional investment
+              drawdowns
+              <br />
+              Tokens have the capability of daily cash flow distributions; great
+              for frequent dividend-seeking investors
+              {/* {this.state.readMore ? (
                 <>
                   <p>
                     Trading with a P2P exchange
@@ -118,10 +133,10 @@ export default class P2P extends Component {
                 <button className="btnp" onClick={this.handleReadMoreBtn}>
                   Read More
                 </button>
-              )}
+              )} */}
             </p>
             <button className="bg-primary border-0 text-light px-4 py-2 mt-2">
-              <h5 className="m-0">Explore P2P</h5>
+              <h5 className="m-0">Explore Tokenized BNB</h5>
             </button>
           </div>
           <div className="col">

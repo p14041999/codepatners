@@ -1,0 +1,355 @@
+@media only screen and (max-width: 900px) {
+  .hero-cont {
+    flex-direction: column !important;
+  }
+  .heroChild2 {
+    margin: 100px 0px;
+    .time {
+      flex-direction: row !important;
+      div {
+        h1 {
+          font-size: 1.6rem !important;
+        }
+      }
+    }
+  }
+  #footer {
+    padding: 65px 25px;
+  }
+  .green-block {
+    z-index: -1;
+  }
+
+  .ico-child1 {
+    width: 100% !important;
+  }
+  .ico-child2 {
+    img {
+      width: 100% !important;
+    }
+  }
+
+  #ase {
+    font-size: 30px !important;
+  }
+  .father {
+    margin: 100px auto !important;
+  }
+  #videocont {
+    margin: initial;
+    flex-direction: column-reverse;
+    padding: 0px 20px !important;
+    #video {
+      width: 100%;
+    }
+    #videodiv {
+      padding: 20px 0px;
+    }
+  }
+  .team-contee {
+    flex-direction: column;
+  }
+  .teame .team-contee .team-card {
+    margin: 0px 5rem;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+  }
+  .top-cont {
+    flex-direction: column;
+  }
+  .carduu {
+    width: initial !important;
+    padding: 0 !important;
+  }
+  .full .mainCont {
+    flex-direction: column;
+    right: -2% !important;
+    width: 70%;
+    top: -5px !important;
+  }
+  .full .mainCont .c1 .logCont {
+    margin: 10px 0px;
+    padding: 0 !important;
+  }
+  .c2 {
+    h1 {
+      font-size: 23px;
+    }
+  }
+
+  #closeBtnCont {
+    right: 32px;
+  }
+  #hero-comp {
+    flex-direction: column;
+  }
+  #hero-container {
+    margin-bottom: 40px;
+  }
+  #pop {
+    display: none;
+  }
+
+  // #hero-img {
+  //   width: 275px;
+  //   padding: 38px 1px;
+  // }
+  .container {
+    margin-left: 32px;
+    margin-right: 20px;
+  }
+  .hero-area .col {
+    max-width: 80%;
+  }
+  .py-7 {
+    padding-top: 9px;
+    // padding-bottom: 70px;
+  }
+  .px-3 {
+    padding: 10px 20px;
+  }
+  .footer-row {
+    flex-direction: column;
+  }
+  .footer-col-1 {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .footer-col-2 {
+    flex-direction: column;
+  }
+  #copyrights {
+    font-size: larger !important;
+  }
+  .get-started h5 {
+    font-size: 14px;
+  }
+  .usage-content .usage-col {
+    // width: auto;
+    // width: auto;
+    width: 100% !important;
+    margin: 0px 11px;
+  }
+  .usage-content {
+    overflow: auto;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+  .row .col {
+    width: 100%;
+  }
+  .usage-card {
+    height: 91px;
+    width: 100px;
+    position: relative;
+  }
+
+  #root {
+    overflow: hidden;
+  }
+  #company-logo {
+    width: 20.81px;
+  }
+  #company-logoblue {
+    width: 20.81px;
+  }
+  #usage-span1:before {
+    top: -5px;
+    left: -5px;
+  }
+  #usage-span1 {
+    width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  #usage-span2:before {
+    top: -5px;
+    left: -5px;
+  }
+  #usage-span2 {
+    width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  #usage-span3:before {
+    top: -5px;
+    left: -5px;
+  }
+  #usage-span3 {
+    width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  #usage-span4:before {
+    top: -5px;
+    left: -5px;
+  }
+  #usage-span4 {
+    width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  .hamburger:before {
+    width: 18.64px;
+  }
+  .hamburger:after {
+    width: 6.58px;
+  }
+  .hamburger {
+    width: 18.64px;
+  }
+  .blue:before {
+    width: 18.64px;
+  }
+  .blue:after {
+    width: 6.58px;
+  }
+  .blue {
+    width: 18.64px;
+  }
+  #company-logo {
+    width: 20.81px;
+  }
+  #arrow-svg {
+    padding-left: 16px;
+  }
+  .blue-block {
+    top: 345px !important;
+  }
+  .cursor {
+    display: none !important;
+  }
+  .pointer {
+    display: none !important;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .about-sidebar {
+    width: 100% !important;
+  }
+  .about-card-title {
+    text-align: center;
+    // margin-risght: 20px;
+    width: 40% !important;
+    padding: 10px 10px;
+  }
+  .about-carde {
+    margin: 10px 0px;
+  }
+  .about-h2 {
+    display: none;
+  }
+  .team-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-row .team-col {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 20px 0px;
+  }
+  // #useCase {
+  //   margin-top: 35pc;
+  // }
+  #pc {
+    display: none !important;
+  }
+  #mobileTimeline {
+    display: block !important;
+    position: relative;
+    .hrline {
+      border-right: 3px solid white;
+      position: absolute;
+      top: 88px;
+      height: 1017px;
+
+      left: 70px;
+      .round {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(0, 110, 255);
+        border-radius: 50%;
+        position: absolute;
+      }
+      .r1 {
+        top: -1px;
+        left: -9px;
+      }
+      .r2 {
+        top: 103px;
+        left: -9px;
+      }
+      .r3 {
+        top: 193px;
+        left: -9px;
+      }
+      .r4 {
+        top: 280px;
+        left: -9px;
+      }
+      .r5 {
+        top: 385px;
+        left: -9px;
+      }
+      .r6 {
+        top: 490px;
+        left: -9px;
+      }
+      .r7 {
+        top: 595px;
+        left: -9px;
+      }
+      .r8 {
+        top: 748px;
+        left: -9px;
+      }
+      .r9 {
+        top: 878px;
+        left: -9px;
+      }
+      .r10 {
+        top: 999px;
+        left: -9px;
+      }
+      .r7 .r8 .r9 .r10 {
+        background-color: initial;
+        border: 2px solid white;
+      }
+    }
+    .timeline-cont {
+      padding-left: 151px;
+      padding-right: 20px;
+    }
+
+    // height: 201px !important;
+  }
+}
+// @media only screen and (max-width: 1289px) {
+//   .timeline-box {
+//     width: 292px !important;
+//     max-width: 292px !important;
+//   }
+// }
+
+@media only screen and (max-width: 550px) {
+  .timeline-box {
+    max-width: 300px !important;
+    width: 100% !important;
+    height: 201px;
+    background: #ffffff1a;
+    margin: 0px 20px;
+    padding: 0px 40px !important;
+  }
+  .bux2 {
+    padding-right: 69px !important;
+  }
+}

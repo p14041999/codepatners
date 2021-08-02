@@ -54,11 +54,11 @@ class Sub1 extends Component {
         // data-aos-duration="1500"
       >
         <div className="child1">
-          <h1>Access the Power of blockchain</h1>
+          <h1>Introducing Zenith Coin - ZTC</h1>
           <p>
-            The highly the not having with lively. Our up with ran go her it
-            gloomy the back, though however projected not for six with then,
-            trusted as concepts belt.
+            ZTC provides an easy-to-use digital money experience, with low fees
+            and fast transaction speed this confirms faster than the swipe of
+            your credit card.
           </p>
           <div id="btn-cont">
             <div>

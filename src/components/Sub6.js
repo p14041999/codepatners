@@ -19,8 +19,8 @@ class Sub6 extends Component {
               </h4>
             )}
           </VisibilitySensor> */}
-          <h4>1</h4>
-          <p>Current Price</p>
+          <h4>$1.800</h4>
+          <p>CURRENT PRICE</p>
         </div>
         <div className="son">
           <PeopleIcon id="acon" />
@@ -28,14 +28,23 @@ class Sub6 extends Component {
             {({ isVisible }) => (
               <h4>
                 {isVisible ? (
-                  <CountUp end={1000000} start={0} duration={3} />
+                  <CountUp
+                    // useEasing={true}
+                    // useGrouping={true}
+                    // separator=","
+                    // decimals={3}
+                    // decimal=","
+                    end={1000}
+                    start={0}
+                    duration={3}
+                  />
                 ) : (
                   0
                 )}
               </h4>
             )}
           </VisibilitySensor>
-          <p>Holders</p>
+          <p>HOLDERS</p>
         </div>
         <div className="son">
           <CopyrightIcon id="acon" />
@@ -43,7 +52,40 @@ class Sub6 extends Component {
             {({ isVisible }) => (
               <h4>
                 {isVisible ? (
-                  <CountUp end={21000000} start={0} duration={4} />
+                  <CountUp
+                    useEasing={true}
+                    useGrouping={true}
+                    separator=","
+                    decimals={3}
+                    decimal=","
+                    end={1000}
+                    start={0}
+                    duration={3}
+                  />
+                ) : (
+                  0
+                )}
+              </h4>
+            )}
+          </VisibilitySensor>
+          <p>CIRCULATING SUPPLY</p>
+        </div>
+        <div className="son">
+          <CopyrightIcon id="acon" />
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <h4>
+                {isVisible ? (
+                  <CountUp
+                    useEasing={true}
+                    useGrouping={true}
+                    separator=","
+                    decimals={3}
+                    decimal=","
+                    end={21000}
+                    start={0}
+                    duration={4}
+                  />
                 ) : (
                   0
                 )}
@@ -51,7 +93,7 @@ class Sub6 extends Component {
             )}
           </VisibilitySensor>
 
-          <p>Supply</p>
+          <p>TOTAL SUPPLY</p>
         </div>
         {/* <div className="son">
           <VisibilitySensor>
