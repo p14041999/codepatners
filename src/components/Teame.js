@@ -77,7 +77,10 @@ class Teame extends Component {
               <a href="#">
                 <Twitter className="icons" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/dimeji-tomori-4a73029"
+                target="_blank"
+              >
                 <LinkedIn className="icons" />
               </a>
             </div>
