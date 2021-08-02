@@ -11,6 +11,7 @@ import NavMenu from "./components/NavbarMenu";
 import Timeline from "./components/Timeline";
 import TeamView from "./components/sub-components/TeamView";
 import Features from "./components/Features";
+import Partner from "./components/Partner";
 import Teame from "./components/Teame";
 import Sub1 from "./components/Sub1";
 import Sub6 from "./components/Sub6";
@@ -60,6 +61,25 @@ export default class App extends Component {
     await this.setState({ ...this.state, Team: val, data: data });
     console.log(this.state);
   };
+
+  handleMetamaskClick = async () => {
+    await window.ethereum.request({
+      method: "wallet_addEthereumChain",
+      params: [
+        {
+          chainId: "0x4F",
+          chainName: "Zenith Chian",
+          rpcUrls: ["https://dataserver-1.zenithchain.co/"],
+          nativeCurrency: {
+            name: "Zenith Coin",
+            decimals: 18,
+            symbol: "ZTC",
+          },
+          // blockExplorerUrls: ["https://goerli.etherscan.io"],
+        },
+      ],
+    });
+  };
   render() {
     const { darkMode } = this.state;
     return (
@@ -83,7 +103,9 @@ export default class App extends Component {
           />
           <div id="pop">
             <button className="btn-nav">Zenith Wallet</button>
-            <button className="btn-nav">Connect With MetaMask</button>
+            <button className="btn-nav" onClick={this.handleMetamaskClick}>
+              Connect With MetaMask
+            </button>
           </div>
           <Hero darkMode={darkMode} />
           <Usage darkMode={darkMode} />
@@ -101,13 +123,13 @@ export default class App extends Component {
             <div id="videodiv">
               <h2>Zenith Chain</h2>
               <p>
-                Zenith Chian combines the best of Ethereum and sovereign
-                blockchains into an attractive feature set. Built by developers,
-                for developers.Zenith Chian combines the best of Ethereum and
-                sovereign blockchains into an attractive feature set. Built by
-                developers, for developers.Zenith Chian combines the best of
-                Ethereum and sovereign blockchains into an attractive feature
-                set. Built by developers, for developers.
+                Zenith Chain is an innovative solution to bring programmability
+                and interoperability. Zenith Chain relies on a system of 21
+                validators with Proof of Staked Authority (PoSA) consensus that
+                can support short block time and lower fees. The most bonded
+                validator candidates of staking will become validators and
+                produce blocks. The double-sign detection and other slashing
+                logic guarantee security, stability, and chain finality
               </p>
             </div>
             <video id="video" controls loop autoPlay muted>
@@ -120,6 +142,7 @@ export default class App extends Component {
           <Sub3 />
           <Sub5 />
           <Teame />
+          <Partner />
         </div>
 
         <div

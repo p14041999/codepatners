@@ -324,6 +324,14 @@ p {
     width: 45%;
   }
 }
+.row-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .col {
+    width: 45%;
+  }
+}
 
 // Basic Image Configuration
 .img-full {
