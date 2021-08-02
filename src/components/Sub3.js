@@ -16,7 +16,7 @@ class Sub3 extends Component {
     return (
       <div id="sub3" data-aos="fade-down">
         <div id="sub3-child1">
-          <Carousel className="row-center">
+          <Carousel>
             <div>
               <img style={{ width: "45%" }} src={Home} />
             </div>
