@@ -75,7 +75,7 @@ export default class App extends Component {
             decimals: 18,
             symbol: "ZTC",
           },
-          // blockExplorerUrls: ["https://goerli.etherscan.io"],
+          blockExplorerUrls: ["https://explorer.zenithchain.com"],
         },
       ],
     });
