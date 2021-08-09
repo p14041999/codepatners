@@ -101,7 +101,7 @@ export default class Usage extends Component {
               </div>
             )}
           </div>
-          <div className="usage-col">
+          {/* <div className="usage-col">
             {darkMode ? (
               <div
                 className={
@@ -167,7 +167,7 @@ export default class Usage extends Component {
                 <span className="active" id="usage-span1"></span>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
         {this.state.p2p && <P2P darkMode={darkMode} />}
         {this.state.smartContract && <SmartContract darkMode={darkMode} />}
