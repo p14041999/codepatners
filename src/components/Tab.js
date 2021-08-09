@@ -13,11 +13,11 @@ import Typewriter from "typewriter-effect";
 let code2 = `// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC777/ERC777.sol";
+import "@openzeppelin/contracts/token/ZRC777/ZRC777.sol";
 
-contract GLDToken is ERC777 {
+contract GLDToken is ZRC777 {
     constructor(uint256 initialSupply, address[] memory defaultOperators)
-        ERC777("Gold", "GLD", defaultOperators)
+        ZRC777("Gold", "GLD", defaultOperators)
     {
         _mint(msg.sender, initialSupply, "", "");
     }
@@ -94,8 +94,8 @@ export default function FullWidthTabs() {
               variant="fullWidth"
               aria-label="full width tabs example"
             >
-              <Tab label="Smart Contracts" {...a11yProps(0)} />
-              <Tab label="NFT's" {...a11yProps(1)} />
+              <Tab label="NFT's" {...a11yProps(0)} />
+              <Tab label="Smart Contracts" {...a11yProps(1)} />
             </Tabs>
           </AppBar>
           <SwipeableViews
@@ -112,21 +112,21 @@ export default function FullWidthTabs() {
                 <p>
                   <span style={{ color: "rgb(55 210 210)" }}>import</span>{" "}
                   <span>
-                    "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+                    "@openzeppelin/contracts/token/ZRC721/extensions/ZRC721URIStorage.sol";
                   </span>
                 </p>
                 <p>
                   <span style={{ color: "rgb(55 210 210)" }}>import</span>{" "}
                   <span>"@openzeppelin/contracts/utils/Counters.sol";</span>
                 </p>
-                <p>contract GameItem is ERC721URIStorage {"{"}</p>
+                <p>contract GameItem is ZRC721URIStorage {"{"}</p>
                 <p>
                   <span style={{ color: "rgb(55 210 210)" }}>using</span>{" "}
                   Counters for Counters.Counter;
                 </p>
                 <p>Counters.Counter private _tokenIds;</p>
 
-                <p>constructor() ERC721("GameItem", "ITM") {"{}"}</p>
+                <p>constructor() ZRC721("GameItem", "ITM") {"{}"}</p>
 
                 <p>
                   {" "}
@@ -197,9 +197,9 @@ export default function FullWidthTabs() {
                 </p>
                 <p>
                   <span style={{ color: "rgb(55 210 210)" }}>import</span>{" "}
-                  "@openzeppelin/contracts/token/ERC777/ERC777.sol";
+                  "@openzeppelin/contracts/token/ZRC777/ZRC777.sol";
                 </p>
-                <p>contract GLDToken is ERC777 {"{"}</p>
+                <p>contract GLDToken is ZRC777 {"{"}</p>
                 <p>
                   <span style={{ color: "rgb(55 210 210)" }}>constructor</span>
                   (uint256 initialSupply, address[] memory defaultOperators)
@@ -208,7 +208,7 @@ export default function FullWidthTabs() {
                   options={{ cursor: "" }}
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString('ERC777("Gold", "GLD", defaultOperators)')
+                      .typeString('ZRC777("Gold", "GLD", defaultOperators)')
                       .start();
                   }}
                 />
