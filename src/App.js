@@ -19,6 +19,7 @@ import Sub5 from "./components/Sub5";
 import Sub3 from "./components/Sub3";
 import "./styles/mobile2.scss";
 import video from "./assets/video.mp4";
+import Tab from "./components/Tab";
 
 export default class App extends Component {
   constructor() {
@@ -108,7 +109,8 @@ export default class App extends Component {
             </button>
           </div>
           <Hero darkMode={darkMode} />
-          <Usage darkMode={darkMode} />
+          {/* <Usage darkMode={darkMode} /> */}
+          <Tab />
           {/* <About darkMode={darkMode} team={this.handleTeamChangeState} /> */}
           {/* {this.state.Team ? (
             <TeamView
