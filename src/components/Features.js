@@ -13,10 +13,10 @@ class Features extends Component {
   render() {
     return (
       <>
-        <div className="feat-cont">
+        <div className="feat-cont" data-aos="fade-down">
           <h1>Features</h1>
           <p style={{ color: "gray", textAlign: "center", fontSize: 20 }}>
-            Zenith Chian combines the best of Ethereum and sovereign blockchains
+            Zenith Chain combines the best of Ethereum and sovereign blockchains
             into an attractive feature set. Built by developers, for developers.
           </p>
           <div className="carduu-cont">

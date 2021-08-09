@@ -1,0 +1,58 @@
+#sub3 {
+  display: flex;
+  position: relative;
+  padding: 50px 0px;
+  margin-bottom: 180px;
+  margin-top: 200px;
+  #sub3-child1 {
+    margin-left: 50px;
+  }
+  #sub3-child2 {
+    color: white;
+    text-align: right;
+    margin-right: 110px;
+
+    h1 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 57px;
+    }
+    #rect {
+      position: absolute;
+      top: 50px;
+      right: 97px;
+      z-index: -1;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      margin: 60px 0px;
+      margin-left: 252px;
+    }
+    #sub3-btn-cont {
+      display: flex;
+      // align-items: flex-end;
+      position: absolute;
+      right: 80px;
+      .sub3Btn {
+        // background-color: yellowgreen;
+        background-color: white !important;
+        display: flex;
+        margin: 0px 20px;
+        padding: 15px;
+        width: 150px;
+        margin-top: 50px;
+        button {
+          border: white;
+          background-color: white;
+          padding: 0px 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.sub5 {
+  // z-index: -2;
+
+  position: relative;
+  color: #ffffff;
+  width: 60%;
+  // margin-left: 20%;
+  margin: 200px 370px;
+  // margin-bottom: 0px;
+  padding-bottom: 30px;
+  height: 130px;
+  width: 850px;
+  // height: 40px;
+  background: linear-gradient(
+    233.46deg,
+    #0f1dff -36.8%,
+    #8a32e0 45.12%,
+    #b035e4 128.76%
+  );
+  //   opacity: 0.6;
+  border-radius: 27px;
+  //   color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    z-index: 1;
+    position: absolute;
+    top: -29px;
+    // right: 121px;
+    font-size: 45px;
+  }
+  p {
+    // width: 60%;
+    font-size: 1.2rem;
+    margin-top: 117px;
+  }
+  a {
+    color: white;
+  }
+  #input-cont {
+    padding: 15px;
+    width: 550px;
+    background-color: white;
+    display: flex;
+    height: 4 0px;
+    border-radius: 15px;
+    margin-top: 30px;
+
+    #input {
+      width: 550px;
+      border: none;
+    }
+    button {
+      background: linear-gradient(
+        91.99deg,
+        #0f1dff -4.93%,
+        #8a32e0 45.91%,
+        #b035e4 97.82%
+      );
+      border-radius: 7px;
+      border: none;
+      height: 40px;
+      color: white;
+      width: 40%;
+    }
+  }
+}
+
+#globe {
+  position: absolute;
+  top: 76px;
+  z-index: -1;
+}
+
+.Sub5-icons {
+  padding: 10px;
+}

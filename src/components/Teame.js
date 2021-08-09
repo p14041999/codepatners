@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import { Facebook, Twitter, LinkedIn } from "@material-ui/icons";
 import ceo from "../assets/ceo.svg";
 import cto from "../assets/cto.svg";
+import coo from "../assets/coo.jpeg";
 import dir from "../assets/director.svg";
 import "../styles/teame.scss";
 
 class Teame extends Component {
   render() {
     return (
-      <div className="teame">
-        <h2>Core Team</h2>
+      <div className="teame" data-aos="fade-down">
+        <h2 style={{ marginTop: 143 }}>Core Team</h2>
         <div className="team-contee">
           <div className="team-card">
             <img src={ceo} />
@@ -61,6 +62,25 @@ class Teame extends Component {
                 <Twitter className="icons" />
               </a>
               <a href="#">
+                <LinkedIn className="icons" />
+              </a>
+            </div>
+          </div>
+          <div className="team-card">
+            <img src={coo} style={{ borderRadius: "50%" }} />
+            <h5 className="text-light">Dimeji Tomori</h5>
+            <p className="text-light">Chief Operating Officer / COO</p>
+            <div className="icons-container">
+              <a href="#">
+                <Facebook className="icons" />
+              </a>
+              <a href="#">
+                <Twitter className="icons" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/dimeji-tomori-4a73029"
+                target="_blank"
+              >
                 <LinkedIn className="icons" />
               </a>
             </div>
