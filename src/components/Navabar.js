@@ -81,8 +81,10 @@ export default class Navabar extends Component {
             )}
             <ArrowForwardIcon
               onClick={this.handleRightArrow}
-              className="text-light px-3"
+              className="text-light px-3 errow"
+              style={{ display: "none" }}
             />
+            <span class="fal"></span>
 
             {/* <div>
             <FormControlLabel

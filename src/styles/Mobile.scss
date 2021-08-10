@@ -5,6 +5,13 @@
   .father {
     margin: 100px auto !important;
   }
+
+  .fal {
+    display: none;
+  }
+  .errow {
+    display: block !important;
+  }
   #videocont {
     margin: initial;
     flex-direction: column-reverse;
