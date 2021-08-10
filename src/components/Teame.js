@@ -3,7 +3,7 @@ import { Facebook, Twitter, LinkedIn } from "@material-ui/icons";
 import ceo from "../assets/ceo.svg";
 import cto from "../assets/cto.svg";
 import coo from "../assets/coo.jpeg";
-import dir from "../assets/director.svg";
+import dir from "../assets/jer.jpeg";
 import "../styles/teame.scss";
 
 class Teame extends Component {
@@ -51,7 +51,7 @@ class Teame extends Component {
             </div>
           </div>
           <div className="team-card">
-            <img src={dir} />
+            <img style={{ borderRadius: "50%" }} src={dir} />
             <h5 className="text-light">Jerome Jones</h5>
             <p className="text-light">Director</p>
             <div className="icons-container">
