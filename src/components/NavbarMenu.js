@@ -20,43 +20,84 @@ class NavbarMenu extends Component {
             <div className="menu-items-name">
               <a
                 onClick={this.handleNavClick}
-                href="#navbar"
+                href="#hero-container"
                 style={{ textDecoration: "none" }}
                 className={darkMode ? "text-dark" : "text-light"}
               >
                 Home
               </a>
             </div>
-            <div className="menu-items-name">
+            {/* <div className="menu-items-name">
               <a
                 onClick={this.handleNavClick}
                 href="#useCase"
                 style={{ textDecoration: "none" }}
                 className={darkMode ? "text-dark" : "text-light"}
               >
-                Usage
+                Build on Zenith Chain
+              </a>
+            </div> */}
+            {/* <div className="menu-items-name">
+              <a
+                onClick={this.handleNavClick}
+                href="#useCase"
+                style={{ textDecoration: "none" }}
+                className={darkMode ? "text-dark" : "text-light"}
+              >
+                Features
+              </a>
+            </div> */}
+            <div className="menu-items-name">
+              <a
+                onClick={this.handleNavClick}
+                href="#containerSub1"
+                style={{ textDecoration: "none" }}
+                className={darkMode ? "text-dark" : "text-light"}
+              >
+                Zenith Coin
               </a>
             </div>
             <div className="menu-items-name">
+              <a
+                onClick={this.handleNavClick}
+                href="#temi"
+                style={{ textDecoration: "none" }}
+                className={darkMode ? "text-dark" : "text-light"}
+              >
+                Timeline
+              </a>
+            </div>
+            <div className="menu-items-name">
+              <a
+                onClick={this.handleNavClick}
+                href="#sub3"
+                style={{ textDecoration: "none" }}
+                className={darkMode ? "text-dark" : "text-light"}
+              >
+                Zenith Wallet
+              </a>
+            </div>
+            {/* <div className="menu-items-name">
               <a
                 onClick={this.handleNavClick}
                 href="#aboutus"
                 style={{ textDecoration: "none" }}
                 className={darkMode ? "text-dark" : "text-light"}
               >
-                About Us
+                Team
               </a>
-            </div>
-            <div className="menu-items-name">
+            </div> */}
+            {/* <div className="menu-items-name">
               <a
                 onClick={this.handleNavClick}
-                href="#pc"
+                href="#aboutus"
                 style={{ textDecoration: "none" }}
                 className={darkMode ? "text-dark" : "text-light"}
               >
-                Roadmap
+                Partners
               </a>
-            </div>
+            </div> */}
+
             <div className="menu-items-name">
               <a
                 onClick={this.handleNavClick}
