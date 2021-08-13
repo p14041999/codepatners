@@ -82,20 +82,21 @@ export default function FullWidthTabs() {
 
   return (
     <div data-aos="fade-down">
-      <h2 className="container text-light">Usage</h2>
+      <h2 className="container text-light">Build on Zenith Chain</h2>
       <div className="row-center" style={{ justifyContent: "center" }}>
         <div className={classes.root}>
           <AppBar position="static" color="default">
             <Tabs
               value={value}
               onChange={handleChange}
+              className="text-info lightBack"
               indicatorColor="primary"
-              textColor="primary"
+              // textColor="primary"
               variant="fullWidth"
               aria-label="full width tabs example"
             >
-              <Tab label="NFT's" {...a11yProps(0)} />
-              <Tab label="Smart Contracts" {...a11yProps(1)} />
+              <Tab label="Smart Contracts" {...a11yProps(0)} />
+              <Tab label="NFT's" {...a11yProps(1)} />
             </Tabs>
           </AppBar>
           <SwipeableViews
@@ -104,6 +105,58 @@ export default function FullWidthTabs() {
             onChangeIndex={handleChangeIndex}
           >
             <TabPanel value={value} index={0} dir={theme.direction}>
+              <div>
+                <p style={{ color: "green" }}>
+                  // SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
+                </p>
+                <p>
+                  <span style={{ color: "rgb(55 210 210)" }}>import</span>{" "}
+                  "@openzeppelin/contracts/token/ZRC777/ZRC777.sol";
+                </p>
+                <p>contract GLDToken is ZRC777 {"{"}</p>
+                <p>
+                  <span style={{ color: "rgb(55 210 210)" }}>constructor</span>
+                  (uint256 initialSupply, address[] memory defaultOperators)
+                </p>
+                <Typewriter
+                  options={{ cursor: "" }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString('ZRC777("Gold", "GLD", defaultOperators)')
+                      .start();
+                  }}
+                />
+                <Typewriter
+                  options={{ cursor: "" }}
+                  onInit={(typewriter) => {
+                    typewriter.pauseFor(6000).typeString("{").start();
+                  }}
+                />
+                <Typewriter
+                  options={{ cursor: "" }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(7000)
+                      .typeString('_mint(msg.sender, initialSupply, "", "");')
+                      .start();
+                  }}
+                />
+
+                <Typewriter
+                  options={{ cursor: "" }}
+                  onInit={(typewriter) => {
+                    typewriter.pauseFor(14000).typeString("}").start();
+                  }}
+                />
+                <Typewriter
+                  options={{ cursor: "" }}
+                  onInit={(typewriter) => {
+                    typewriter.pauseFor(14500).typeString("}").start();
+                  }}
+                />
+              </div>
+            </TabPanel>
+            <TabPanel value={value} index={1} dir={theme.direction}>
               <div>
                 <p style={{ color: "green" }}>
                   // SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
@@ -186,58 +239,6 @@ export default function FullWidthTabs() {
                   options={{ cursor: "" }}
                   onInit={(typewriter) => {
                     typewriter.pauseFor(14000).typeString("}").start();
-                  }}
-                />
-              </div>
-            </TabPanel>
-            <TabPanel value={value} index={1} dir={theme.direction}>
-              <div>
-                <p style={{ color: "green" }}>
-                  // SPDX-License-Identifier: MIT pragma solidity ^0.8.0;
-                </p>
-                <p>
-                  <span style={{ color: "rgb(55 210 210)" }}>import</span>{" "}
-                  "@openzeppelin/contracts/token/ZRC777/ZRC777.sol";
-                </p>
-                <p>contract GLDToken is ZRC777 {"{"}</p>
-                <p>
-                  <span style={{ color: "rgb(55 210 210)" }}>constructor</span>
-                  (uint256 initialSupply, address[] memory defaultOperators)
-                </p>
-                <Typewriter
-                  options={{ cursor: "" }}
-                  onInit={(typewriter) => {
-                    typewriter
-                      .typeString('ZRC777("Gold", "GLD", defaultOperators)')
-                      .start();
-                  }}
-                />
-                <Typewriter
-                  options={{ cursor: "" }}
-                  onInit={(typewriter) => {
-                    typewriter.pauseFor(6000).typeString("{").start();
-                  }}
-                />
-                <Typewriter
-                  options={{ cursor: "" }}
-                  onInit={(typewriter) => {
-                    typewriter
-                      .pauseFor(7000)
-                      .typeString('_mint(msg.sender, initialSupply, "", "");')
-                      .start();
-                  }}
-                />
-
-                <Typewriter
-                  options={{ cursor: "" }}
-                  onInit={(typewriter) => {
-                    typewriter.pauseFor(14000).typeString("}").start();
-                  }}
-                />
-                <Typewriter
-                  options={{ cursor: "" }}
-                  onInit={(typewriter) => {
-                    typewriter.pauseFor(14500).typeString("}").start();
                   }}
                 />
               </div>

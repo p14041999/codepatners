@@ -64,22 +64,35 @@ export default class App extends Component {
   };
 
   handleMetamaskClick = async () => {
-    await window.ethereum.request({
-      method: "wallet_addEthereumChain",
-      params: [
-        {
-          chainId: "0x4F",
-          chainName: "Zenith Chian",
-          rpcUrls: ["https://dataserver-1.zenithchain.co/"],
-          nativeCurrency: {
-            name: "Zenith Coin",
-            decimals: 18,
-            symbol: "ZTC",
-          },
-          blockExplorerUrls: ["https://explorer.zenithchain.com"],
-        },
-      ],
-    });
+    if (window.ethereum !== undefined) {
+      await window.ethereum
+        .request({
+          method: "wallet_addEthereumChain",
+          params: [
+            {
+              chainId: "0x4F",
+              chainName: "Zenith Chian",
+              rpcUrls: ["https://dataserver-1.zenithchain.co/"],
+              nativeCurrency: {
+                name: "Zenith Coin",
+                decimals: 18,
+                symbol: "ZENITH",
+              },
+              blockExplorerUrls: ["https://explorer.zenithchain.com"],
+            },
+          ],
+        })
+        .then((success) => {
+          if (success) {
+            console.log("successfully ADDED");
+          } else {
+            console.log("error");
+          }
+        });
+      // .catch(console.log(error));
+    } else {
+      alert("Please Install MetaMask Extension and Refresh Page!");
+    }
   };
   render() {
     const { darkMode } = this.state;
