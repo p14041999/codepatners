@@ -11,10 +11,19 @@ $p: 14px;
 $h1-res: 36px;
 $h2-res: 26px;
 #pop {
+  display: flex;
+  width: 400px;
   position: absolute;
   top: 41px;
   right: 22px;
   z-index: 999999;
+}
+.total {
+  margin: 0 auto;
+}
+.tab {
+  width: 1293px;
+  margin: 0 auto;
 }
 #video {
   width: 45%;
@@ -25,6 +34,8 @@ $h2-res: 26px;
   display: flex;
   padding: 0px 100px;
   margin: 350px 0px;
+  width: 1293px;
+  margin: 0 auto;
   #videodiv {
     color: white;
     padding: 0px 70px;
@@ -42,6 +53,29 @@ $h2-res: 26px;
 }
 .lightBack {
   background-color: #1e183c;
+}
+.navdrop {
+  padding: 15px;
+  z-index: 999999;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  width: 220px;
+}
+.navdrop {
+  border-radius: 10px;
+  li {
+    padding: 5px 0px;
+  }
+  li:hover {
+    cursor: pointer;
+    color: #c2c0c0;
+    // border-bottom: 2px solid white;
+  }
+}
+.type {
+  padding: 10px 0px;
 }
 
 .btnp {

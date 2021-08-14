@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1293px;
+  margin: 0 auto;
 }
 .btn-nav {
   border: none;
@@ -22,6 +24,14 @@
   );
   // border: 0.7px solid white;
   // font-family: ;
+}
+.backGrad {
+  background: linear-gradient(
+    233.46deg,
+    #0f1dff -36.8%,
+    #8a32e0 45.12%,
+    #b035e4 128.76%
+  );
 }
 .btn-nav:hover {
   box-shadow: 0 0 20px #eee;

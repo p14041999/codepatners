@@ -7,7 +7,7 @@ class Timeline extends Component {
     return (
       <>
         <div id="temi">
-          <div id="pc">
+          <div id="pc" className="tab" style={{ width: "initial" }}>
             <h1 style={{ textAlign: "center" }} className="text-light">
               Timeline
             </h1>
