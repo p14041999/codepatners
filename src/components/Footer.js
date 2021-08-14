@@ -7,8 +7,8 @@ export default class Footer extends Component {
     return (
       <>
         {darkMode ? (
-          <div id="footer" className="container py-8 text-dark">
-            <div className="footer-row">
+          <div id="footer" className="container py-8 text-dark ">
+            <div className="footer-row tab">
               <div className="footer-col-1">
                 <div className="footer-logo-group text-primary">
                   <img src={Logo} alt="" />

@@ -35,7 +35,13 @@ class Partner extends Component {
         >
           Our Partners
         </h1>
-        <Carousel
+        <div className="tab row-center part" style={{ width: 1500 }}>
+          <img src={p1} style={{ padding: 20 }} />
+          <img src={p2} style={{ padding: 20 }} />
+          <img src={p3} style={{ padding: 20 }} />
+          <img src={p4} style={{ padding: 20 }} />
+        </div>
+        {/* <Carousel
           swipeable={true}
           draggable={false}
           showDots={true}
@@ -60,7 +66,7 @@ class Partner extends Component {
           <img src={p4} style={{ padding: 20 }} />
           <img src={p5} style={{ padding: 20 }} />
           <img src={p6} style={{ padding: 20 }} />
-        </Carousel>
+        </Carousel> */}
         ;
       </div>
     );
