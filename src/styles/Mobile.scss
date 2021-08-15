@@ -4,11 +4,20 @@
   }
   .father {
     margin: 100px auto !important;
+    width: initial !important;
+  }
+
+  .fal {
+    display: none;
+  }
+  .errow {
+    display: block !important;
   }
   #videocont {
     margin: initial;
     flex-direction: column-reverse;
     padding: 0px 20px !important;
+    width: initial;
     #video {
       width: 100%;
     }
@@ -47,6 +56,17 @@
     }
   }
 
+  #sub3 {
+    width: initial;
+  }
+  .part {
+    width: initial !important;
+    flex-direction: column;
+    img {
+      padding: 10px 0 !important;
+      margin: 10px 0 !important;
+    }
+  }
   #closeBtnCont {
     right: 32px;
   }
@@ -55,11 +75,42 @@
   }
   #hero-container {
     margin-bottom: 40px;
+    width: initial !important;
   }
   #pop {
     display: none;
   }
 
+  .nav-top {
+    width: initial !important;
+    margin: initial !important;
+  }
+  .fix {
+    width: initial !important;
+    margin: initial !important;
+  }
+  .nav-btn {
+    display: none !important;
+  }
+  #logo-cont {
+    margin: initial !important;
+  }
+  .hero-area {
+    width: 100% !important;
+  }
+  .hero-btn {
+    flex-direction: column;
+    align-items: flex-start !important;
+    a {
+      margin-left: 0 !important;
+    }
+  }
+  .tabzz {
+    width: initial;
+    h1 {
+      margin: 10px !important;
+    }
+  }
   // #hero-img {
   //   width: 275px;
   //   padding: 38px 1px;
@@ -321,5 +372,12 @@
   }
   .bux2 {
     padding-right: 69px !important;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .hero-area {
+    width: 1293px;
+    margin: 0 auto;
   }
 }

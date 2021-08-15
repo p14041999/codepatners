@@ -20,6 +20,7 @@ import Sub3 from "./components/Sub3";
 import "./styles/mobile2.scss";
 import video from "./assets/video.mp4";
 import Tab from "./components/Tab";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 
 export default class App extends Component {
   constructor() {
@@ -31,6 +32,7 @@ export default class App extends Component {
       darkMode: true,
     };
   }
+
   componentDidMount() {
     let cursor = window.document.querySelector(".cursor");
     let pointer = window.document.querySelector(".pointer");
@@ -50,6 +52,7 @@ export default class App extends Component {
       duration: 2000,
     });
   }
+
   handleChangeState = (val) => {
     this.setState({ ...this.state, NavMenu: val });
   };
@@ -64,98 +67,109 @@ export default class App extends Component {
   };
 
   handleMetamaskClick = async () => {
-    await window.ethereum.request({
-      method: "wallet_addEthereumChain",
-      params: [
-        {
-          chainId: "0x4F",
-          chainName: "Zenith Chian",
-          rpcUrls: ["https://dataserver-1.zenithchain.co/"],
-          nativeCurrency: {
-            name: "Zenith Coin",
-            decimals: 18,
-            symbol: "ZTC",
-          },
-          blockExplorerUrls: ["https://explorer.zenithchain.com"],
-        },
-      ],
-    });
+    if (window.ethereum !== undefined) {
+      await window.ethereum
+        .request({
+          method: "wallet_addEthereumChain",
+          params: [
+            {
+              chainId: "0x4F",
+              chainName: "Zenith Chian",
+              rpcUrls: ["https://dataserver-1.zenithchain.co/"],
+              nativeCurrency: {
+                name: "Zenith Coin",
+                decimals: 18,
+                symbol: "ZENITH",
+              },
+              blockExplorerUrls: ["https://explorer.zenithchain.com"],
+            },
+          ],
+        })
+        .then((success) => {
+          if (success) {
+            console.log("successfully ADDED");
+          } else {
+            console.log("error");
+          }
+        });
+      // .catch(console.log(error));
+    } else {
+      alert("Please Install MetaMask Extension and Refresh Page!");
+    }
   };
   render() {
     const { darkMode } = this.state;
     return (
       <>
-        <div
-          className={darkMode ? "max-width bg-dark" : "max-width bg-light"}
-          id="desktop"
-        >
-          {this.state.NavMenu && (
-            <NavMenu
-              handleChangeState={this.handleChangeState}
-              darkMode={darkMode}
-            />
-          )}
+        <div className="total">
+          <div
+            className={darkMode ? "max-width bg-dark" : "max-width bg-light"}
+            id="desktop"
+          >
+            {this.state.NavMenu && (
+              <NavMenu
+                handleChangeState={this.handleChangeState}
+                darkMode={darkMode}
+              />
+            )}
 
-          <Navbar
-            NavMenu={this.state}
-            darkMode={darkMode}
-            darkModeFunc={this.handleDarkModeChangeState}
-            handleChangeState={this.handleChangeState}
-          />
-          <div id="pop">
-            <button className="btn-nav">Zenith Wallet</button>
-            <button className="btn-nav" onClick={this.handleMetamaskClick}>
-              Connect With MetaMask
-            </button>
-          </div>
-          <Hero darkMode={darkMode} />
-          {/* <Usage darkMode={darkMode} /> */}
-          <Tab />
-          {/* <About darkMode={darkMode} team={this.handleTeamChangeState} /> */}
-          {/* {this.state.Team ? (
+            <Navbar
+              NavMenu={this.state}
+              darkMode={darkMode}
+              darkModeFunc={this.handleDarkModeChangeState}
+              handleChangeState={this.handleChangeState}
+            />
+
+            <Hero darkMode={darkMode} />
+            {/* <Usage darkMode={darkMode} /> */}
+            <Tab />
+            {/* <About darkMode={darkMode} team={this.handleTeamChangeState} /> */}
+            {/* {this.state.Team ? (
             <TeamView
               team={this.handleTeamChangeState}
               data={this.state.data}
             />
           ) : null} */}
-          <Features />
-          <Sub1 />
-          <Sub6 />
-          <div id="videocont" data-aos="fade-down">
-            <div id="videodiv">
-              <h2>Zenith Chain</h2>
-              <p>
-                Zenith Chain is an innovative solution to bring programmability
-                and interoperability. Zenith Chain relies on a system of 21
-                validators with Proof of Staked Authority (PoSA) consensus that
-                can support short block time and lower fees. The most bonded
-                validator candidates of staking will become validators and
-                produce blocks. The double-sign detection and other slashing
-                logic guarantee security, stability, and chain finality
-              </p>
+            <Features />
+            <Sub1 />
+            <Sub6 />
+            <div id="videocont" data-aos="fade-down">
+              <div id="videodiv">
+                <h2>Zenith Chain</h2>
+                <p>
+                  Zenith Chain is an innovative solution to bring
+                  programmability and interoperability. Zenith Chain relies on a
+                  system of 21 validators with Proof of Staked Authority (PoSA)
+                  consensus that can support short block time and lower fees.
+                  The most bonded validator candidates of staking will become
+                  validators and produce blocks. The double-sign detection and
+                  other slashing logic guarantee security, stability, and chain
+                  finality
+                </p>
+              </div>
+              <video id="video" controls loop autoPlay muted>
+                <source src={video} type="video/mp4" />
+
+                <source src="movie.ogg" type="video/ogg" />
+              </video>
             </div>
-            <video id="video" controls loop autoPlay muted>
-              <source src={video} type="video/mp4" />
-
-              <source src="movie.ogg" type="video/ogg" />
-            </video>
+            <Timeline />
+            <Sub3 />
+            <Sub5 />
+            <Teame />
+            <Partner />
           </div>
-          <Timeline />
-          <Sub3 />
-          <Sub5 />
-          <Teame />
-          <Partner />
-        </div>
 
-        <div
-          className={
-            darkMode ? "max-width pos-rel" : "max-width pos-rel darkBack"
-          }
-        >
-          <Footer darkMode={darkMode} />
+          <div
+            className={
+              darkMode ? "max-width pos-rel" : "max-width pos-rel darkBack"
+            }
+          >
+            <Footer darkMode={darkMode} />
+          </div>
+          <span className="cursor"></span>
+          <span className="pointer"></span>
         </div>
-        <span className="cursor"></span>
-        <span className="pointer"></span>
       </>
     );
   }
