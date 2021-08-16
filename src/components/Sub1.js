@@ -54,11 +54,11 @@ class Sub1 extends Component {
         // data-aos-duration="1500"
       >
         <div className="child1">
-          <h1>Introducing Zenith Coin - ZTC</h1>
+          <h1>Introducing Zenith Coin </h1>
           <p>
-            ZTC provides an easy-to-use digital money experience, with low fees
-            and fast transaction speed this confirms faster than the swipe of
-            your credit card.
+            Zenith Coin provides an easy-to-use digital money experience, with
+            low fees and fast transactions, which confirms faster than the swipe
+            of your credit card.
           </p>
           <div id="btn-cont">
             <div>
@@ -74,8 +74,8 @@ class Sub1 extends Component {
               <span>Certainity</span>
             </div>
           </div>
-          <button className="btn btne1" onClick={this.handleBuyCoinBtn}>
-            Buy Zenith Coin Now
+          <button className="btn btne1">
+            <a>Buy Zenith Coin Now</a>
           </button>
         </div>
         <div className="child2 floating">

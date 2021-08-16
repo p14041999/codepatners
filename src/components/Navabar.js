@@ -8,6 +8,7 @@ import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
 import CastConnectedIcon from "@material-ui/icons/CastConnected";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ExplicitIcon from "@material-ui/icons/Explicit";
 
 export default class Navabar extends Component {
   constructor() {
@@ -112,8 +113,11 @@ export default class Navabar extends Component {
           </div> */}
             {/* id="pop" */}
             <div className="nav-btn" style={{ display: "flex" }}>
-              <button className="btn-nav" style={{ height: 45, width: 150 }}>
-                Zenith Wallet
+              <button className="btn-nav" style={{ height: 45, width: 140 }}>
+                By Zenith Coin
+              </button>
+              <button className="btn-nav" style={{ height: 45, width: 140 }}>
+                Block Explorer
               </button>
               <div>
                 <button
@@ -124,11 +128,11 @@ export default class Navabar extends Component {
                     alignItems: "center",
                     justifyContent: "space-between",
                     height: 45,
-                    width: 200,
+                    width: 140,
                     marginRight: 40,
                   }}
                 >
-                  Connect With Wallet
+                  Select a Wallet
                   <ArrowDropDownIcon />
                 </button>
                 {this.state.navDrop ? (
@@ -140,9 +144,9 @@ export default class Navabar extends Component {
                       className="text-light"
                       onClick={this.handleMetamaskClick}
                     >
-                      Connect With MetaMask
+                      MetaMask
                     </li>
-                    <li className="text-light">Connect With Zenith Wallet</li>
+                    <li className="text-light">Zenith Wallet</li>
                   </ul>
                 ) : null}
               </div>
@@ -156,8 +160,15 @@ export default class Navabar extends Component {
                 style={{ listStyle: "none" }}
                 className="text-light py-1 row-center"
               >
+                <ExplicitIcon />
+                <span className="px-2">Block Explorer</span>
+              </li>
+              <li
+                style={{ listStyle: "none" }}
+                className="text-light py-1 row-center"
+              >
                 <AccountBalanceWalletIcon />
-                <span className="px-2">Zenith Wallet</span>
+                <span className="px-2">By Zenith Coin</span>
               </li>
               <li
                 style={{ listStyle: "none" }}
