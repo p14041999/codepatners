@@ -57,7 +57,10 @@
   }
 
   #sub3 {
-    width: initial;
+    width: initial !important;
+  }
+  .whitePap {
+    margin-top: 20px !important;
   }
   .part {
     width: initial !important;
