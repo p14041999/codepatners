@@ -71,11 +71,18 @@ class Sub1 extends Component {
             </div>
             <div>
               <img src={hand} />
-              <span>Certainity</span>
+              <span>Certainty</span>
             </div>
           </div>
           <button className="btn btne1">
-            <a>Buy Zenith Coin Now</a>
+            <a
+              className="text-light"
+              style={{ textDecoration: "none" }}
+              href="https://ico.zenithchain.co/"
+              target="_blank"
+            >
+              Buy Zenith Coin Now
+            </a>
           </button>
         </div>
         <div className="child2 floating">

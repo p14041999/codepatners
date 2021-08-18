@@ -12,7 +12,11 @@ class Hero extends Component {
 
     return (
       <div className="container " id="hero-container" data-aos="fade-down">
-        <div className="hero-area py-7 " id="hero-comp">
+        <div
+          className="hero-area py-7 "
+          style={{ paddingBottom: 10 }}
+          id="hero-comp"
+        >
           <div className="col">
             <div className="get-started">
               <p class="bold text-primary">

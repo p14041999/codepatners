@@ -29,7 +29,7 @@ export default class Footer extends Component {
                   <a
                     style={{ textDecoration: "none", color: "black" }}
                     target="_blank"
-                    href="https://zenithchain.co"
+                    href="https://ico.zenithchain.co/"
                   >
                     <p>Zenith Coin</p>
                   </a>
@@ -53,7 +53,7 @@ export default class Footer extends Component {
                   <a
                     style={{ textDecoration: "none", color: "black" }}
                     target="_blank"
-                    href="https://docs.zenithchain.co/Wallet"
+                    href="https://explorer.zenithchain.co/"
                   >
                     <p>Block Explorer</p>
                   </a>
