@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Facebook, Twitter, LinkedIn } from "@material-ui/icons";
 import ceo from "../assets/ceo.svg";
-import cto from "../assets/cto.svg";
+import cto from "../assets/cto2.jpeg";
 import coo from "../assets/coo.jpeg";
 import dir from "../assets/jer.jpeg";
 import "../styles/teame.scss";
@@ -32,7 +32,15 @@ class Teame extends Component {
             </div>
           </div>
           <div className="team-card">
-            <img src={cto} />
+            <img
+              style={{
+                width: 200,
+                height: 200,
+                borderRadius: "50%",
+                objectFit: "fill",
+              }}
+              src={cto}
+            />
             <h5 className="text-light">Rajesh Chinnadurai</h5>
             <p className="text-light">Co-Founder / CTO</p>
             <div className="icons-container">
