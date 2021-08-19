@@ -16,6 +16,7 @@ import Teame from "./components/Teame";
 import Sub1 from "./components/Sub1";
 import Sub6 from "./components/Sub6";
 import Sub5 from "./components/Sub5";
+import Comparision from "./components/Comparision";
 import Sub3 from "./components/Sub3";
 import "./styles/mobile2.scss";
 import video from "./assets/video.mp4";
@@ -154,8 +155,10 @@ export default class App extends Component {
               </video>
             </div>
             <Timeline />
-            <Sub3 />
+            {/* <Sub3 /> */}
+            <Comparision />
             <Sub5 />
+
             <Teame />
             <Partner />
           </div>

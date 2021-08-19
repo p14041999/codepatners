@@ -69,7 +69,7 @@ export default function FullWidthTabs() {
 
   return (
     <div data-aos="fade-down" className="tab tabzz">
-      <h2 className="text-light">Build on Zenith Chain</h2>
+      <h2 className="text-light text-center">Build on Zenith Chain</h2>
       <div className="row-center" style={{ justifyContent: "center" }}>
         <div className={classes.root}>
           <AppBar position="static" color="default">

@@ -8,6 +8,7 @@ import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
 import CastConnectedIcon from "@material-ui/icons/CastConnected";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ExplicitIcon from "@material-ui/icons/Explicit";
 
 export default class Navabar extends Component {
   constructor() {
@@ -38,6 +39,37 @@ export default class Navabar extends Component {
   };
   handleRightArrow = () => {
     this.setState({ button: !this.state.button });
+  };
+  handleMetamaskClick = async () => {
+    if (window.ethereum !== undefined) {
+      await window.ethereum
+        .request({
+          method: "wallet_addEthereumChain",
+          params: [
+            {
+              chainId: "0x4F",
+              chainName: "Zenith Chain",
+              rpcUrls: ["https://dataserver-1.zenithchain.co/"],
+              nativeCurrency: {
+                name: "Zenith Coin",
+                decimals: 18,
+                symbol: "ZENITH",
+              },
+              blockExplorerUrls: ["https://explorer.zenithchain.com"],
+            },
+          ],
+        })
+        .then((success) => {
+          if (success) {
+            console.log("successfully ADDED");
+          } else {
+            console.log("error");
+          }
+        });
+      // .catch(console.log(error));
+    } else {
+      alert("Please Install MetaMask Extension and Refresh Page!");
+    }
   };
   render() {
     const { darkModeFunc, darkMode } = this.props;
@@ -112,9 +144,16 @@ export default class Navabar extends Component {
           </div> */}
             {/* id="pop" */}
             <div className="nav-btn" style={{ display: "flex" }}>
-              <button className="btn-nav" style={{ height: 45, width: 150 }}>
-                Zenith Wallet
-              </button>
+              <a href="https://ico.zenithchain.co/" target="_blank">
+                <button className="btn-nav" style={{ height: 45, width: 140 }}>
+                  Buy Zenith Coin
+                </button>
+              </a>
+              <a href="https://explorer.zenithchain.co/" target="_blank">
+                <button className="btn-nav" style={{ height: 45, width: 140 }}>
+                  Block Explorer
+                </button>
+              </a>
               <div>
                 <button
                   className="btn-nav"
@@ -124,11 +163,11 @@ export default class Navabar extends Component {
                     alignItems: "center",
                     justifyContent: "space-between",
                     height: 45,
-                    width: 200,
+                    width: 160,
                     marginRight: 40,
                   }}
                 >
-                  Connect With Wallet
+                  Select a Wallet
                   <ArrowDropDownIcon />
                 </button>
                 {this.state.navDrop ? (
@@ -140,9 +179,15 @@ export default class Navabar extends Component {
                       className="text-light"
                       onClick={this.handleMetamaskClick}
                     >
-                      Connect With MetaMask
+                      MetaMask
                     </li>
-                    <li className="text-light">Connect With Zenith Wallet</li>
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href="https://ico.zenithchain.co/"
+                      target="_blank"
+                    >
+                      <li className="text-light">Zenith Wallet</li>
+                    </a>
                   </ul>
                 ) : null}
               </div>
@@ -152,13 +197,24 @@ export default class Navabar extends Component {
         {this.state.button ? (
           <div className="py-2" style={{ backgroundColor: "#1f1c35" }}>
             <ul>
-              <li
-                style={{ listStyle: "none" }}
-                className="text-light py-1 row-center"
-              >
-                <AccountBalanceWalletIcon />
-                <span className="px-2">Zenith Wallet</span>
-              </li>
+              <a href="https://explorer.zenithchain.co/" target="_blank">
+                <li
+                  style={{ listStyle: "none" }}
+                  className="text-light py-1 row-center"
+                >
+                  <ExplicitIcon />
+                  <span className="px-2">Block Explorer</span>
+                </li>
+              </a>
+              <a href="https://ico.zenithchain.co/" target="_blank">
+                <li
+                  style={{ listStyle: "none" }}
+                  className="text-light py-1 row-center"
+                >
+                  <AccountBalanceWalletIcon />
+                  <span className="px-2">Buy Zenith Coin</span>
+                </li>
+              </a>
               <li
                 style={{ listStyle: "none" }}
                 className="text-light py-1 row-center"

@@ -12,7 +12,11 @@ class Hero extends Component {
 
     return (
       <div className="container " id="hero-container" data-aos="fade-down">
-        <div className="hero-area py-7 " id="hero-comp">
+        <div
+          className="hero-area py-7 "
+          style={{ paddingBottom: 10 }}
+          id="hero-comp"
+        >
           <div className="col">
             <div className="get-started">
               <p class="bold text-primary">
@@ -82,7 +86,7 @@ class Hero extends Component {
                 style={{ textDecoration: "none", marginLeft: 20 }}
               >
                 <button
-                  className="get-started border-0 bg-primary text-light px-5 mt-5"
+                  className="get-started border-0 bg-primary text-light px-5 mt-5 whitePap"
                   style={{ margintop: "30px" }}
                 >
                   <h5 style={{ margin: 15 }}>White Paper</h5>

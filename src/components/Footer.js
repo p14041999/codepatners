@@ -25,13 +25,13 @@ export default class Footer extends Component {
               </div>
               <div className="footer-col-2">
                 <div className="footer-link-col">
-                  <h5>Individuals</h5>
+                  <h5>Products</h5>
                   <a
                     style={{ textDecoration: "none", color: "black" }}
                     target="_blank"
-                    href="https://zenithchain.co"
+                    href="https://ico.zenithchain.co/"
                   >
-                    <p>Zenith Chain (ZTC)</p>
+                    <p>Zenith Coin</p>
                   </a>
                   {/* <a style={{textDecoration:"none",color:"black"}}target="_blank" href="https://docs.zenithchain.co">
                 <p>Zenith Wallet</p>
@@ -48,7 +48,14 @@ export default class Footer extends Component {
                     target="_blank"
                     href="https://docs.zenithchain.co/Wallet"
                   >
-                    <p>Connect to Metamask</p>
+                    <p>Zenith Pay</p>
+                  </a>
+                  <a
+                    style={{ textDecoration: "none", color: "black" }}
+                    target="_blank"
+                    href="https://explorer.zenithchain.co/"
+                  >
+                    <p>Block Explorer</p>
                   </a>
                 </div>
                 <div className="footer-link-col">
