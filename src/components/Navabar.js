@@ -48,7 +48,7 @@ export default class Navabar extends Component {
           params: [
             {
               chainId: "0x4F",
-              chainName: "Zenith Chian",
+              chainName: "Zenith Chain",
               rpcUrls: ["https://dataserver-1.zenithchain.co/"],
               nativeCurrency: {
                 name: "Zenith Coin",
