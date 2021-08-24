@@ -144,7 +144,7 @@ export default class Navabar extends Component {
           </div> */}
             {/* id="pop" */}
             <div className="nav-btn" style={{ display: "flex" }}>
-              <a href="https://ico.zenithchain.co/" target="_blank">
+              <a>
                 <button className="btn-nav" style={{ height: 45, width: 140 }}>
                   Buy Zenith Coin
                 </button>
@@ -182,9 +182,6 @@ export default class Navabar extends Component {
                       MetaMask
                     </li>
                     <a
-                      style={{ textDecoration: "none" }}
-                      href="https://ico.zenithchain.co/"
-                      target="_blank"
                     >
                       <li className="text-light">Zenith Wallet</li>
                     </a>
@@ -206,7 +203,7 @@ export default class Navabar extends Component {
                   <span className="px-2">Block Explorer</span>
                 </li>
               </a>
-              <a href="https://ico.zenithchain.co/" target="_blank">
+              <a>
                 <li
                   style={{ listStyle: "none" }}
                   className="text-light py-1 row-center"
@@ -220,7 +217,7 @@ export default class Navabar extends Component {
                 className="text-light py-1 row-center"
               >
                 <CastConnectedIcon />
-                <span className="px-2">Connect With Metamask</span>
+                <span className="px-2" onClick={this.handleMetamaskClick} >Connect With Metamask</span>
               </li>
             </ul>
           </div>
