@@ -74,15 +74,8 @@ class Sub1 extends Component {
               <span>Certainty</span>
             </div>
           </div>
-          <button className="btn btne1">
-            <a
-              className="text-light"
-              style={{ textDecoration: "none" }}
-              href="https://ico.zenithchain.co/"
-              target="_blank"
-            >
+          <button className="btn btne1" disabled>
               Buy Zenith Coin Now
-            </a>
           </button>
         </div>
         <div className="child2 floating">
