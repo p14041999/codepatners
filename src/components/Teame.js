@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Facebook, Twitter, LinkedIn } from "@material-ui/icons";
-import ceo from "../assets/jonn.svg";
+import ceo from "../assets/jonn.jpeg";
 import cto from "../assets/cto2.jpeg";
 import coo from "../assets/coo.jpeg";
 import dir from "../assets/jermos.jpeg";
