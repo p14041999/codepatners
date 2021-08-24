@@ -13,7 +13,12 @@ class Teame extends Component {
         <h2 style={{ marginTop: 143 }}>Core Team</h2>
         <div className="team-contee">
           <div className="team-card">
-            <img src={ceo} />
+            <img style={{
+                width: 200,
+                height: 200,
+                borderRadius: "50%",
+                objectFit: "fill",
+              }} src={ceo} />
             <h5 className="text-light">Jonathan Emmanuel</h5>
             <p className="text-light">Founder / CEO</p>
             <div className="icons-container">
@@ -59,7 +64,12 @@ class Teame extends Component {
             </div>
           </div>
           <div className="team-card">
-            <img style={{ borderRadius: "50%" }} src={dir} />
+            <img style={{
+                width: 200,
+                height: 200,
+                borderRadius: "50%",
+                objectFit: "fill",
+              }} src={dir} />
             <h5 className="text-light">Jerome Jones</h5>
             <p className="text-light">Director</p>
             <div className="icons-container">
