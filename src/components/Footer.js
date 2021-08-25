@@ -28,8 +28,9 @@ export default class Footer extends Component {
                   <h5>Products</h5>
                   <a
                     style={{ textDecoration: "none", color: "black" }}
+                    href="https://zenithchain.net" 
                     target="_blank"
-                    href="https://ico.zenithchain.co/"
+                     
                   >
                     <p>Zenith Coin</p>
                   </a>
