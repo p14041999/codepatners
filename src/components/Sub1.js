@@ -74,9 +74,11 @@ class Sub1 extends Component {
               <span>Certainty</span>
             </div>
           </div>
+          <a href="https://zenithchain.net" target="_blank" >
           <button className="btn btne1" disabled>
               Buy Zenith Coin Now
           </button>
+          </a>
         </div>
         <div className="child2 floating">
           <img src={sub1} />
