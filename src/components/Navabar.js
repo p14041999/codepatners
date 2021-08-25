@@ -55,7 +55,7 @@ export default class Navabar extends Component {
                 decimals: 18,
                 symbol: "ZENITH",
               },
-              blockExplorerUrls: ["https://explorer.zenithchain.com"],
+              blockExplorerUrls: ["https://explorer.zenithchain.co"],
             },
           ],
         })
@@ -144,7 +144,7 @@ export default class Navabar extends Component {
           </div> */}
             {/* id="pop" */}
             <div className="nav-btn" style={{ display: "flex" }}>
-              <a>
+              <a href="https://zenithchain.net" target="_blank">
                 <button className="btn-nav" style={{ height: 45, width: 140 }}>
                   Buy Zenith Coin
                 </button>
@@ -203,7 +203,7 @@ export default class Navabar extends Component {
                   <span className="px-2">Block Explorer</span>
                 </li>
               </a>
-              <a>
+              <a href="https://zenithchain.net" target="_blank">
                 <li
                   style={{ listStyle: "none" }}
                   className="text-light py-1 row-center"
